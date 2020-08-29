@@ -7,7 +7,8 @@ declare module 'styled-components' {
         colors: {
             primary: string;
             secondary: string;
-            text: string;
+            textPrimary: string;
+            textSecondary: string;
             sideBarColor: string;
             gradientBackgroundColor: Array<string>;
             profile: string;
