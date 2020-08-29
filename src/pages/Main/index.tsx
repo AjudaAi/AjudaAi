@@ -24,7 +24,7 @@ const Main: React.FC = () =>  {
                 <Wellcome />
             </LinearGradientStyled>
         </Container>
-        </ThemeProvider>
+      </ThemeProvider>
     );
 }
 
