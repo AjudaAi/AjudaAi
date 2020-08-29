@@ -1,7 +1,5 @@
 import styled from 'styled-components/native';
-
 import LinearGradient from 'react-native-linear-gradient';
-import theme from '../../styles/theme';
 
 export const Container = styled.View`
   position: relative;
@@ -21,7 +19,7 @@ export const BoxModelGradient = styled(LinearGradient)`
 export const GlassModel = styled.View`
   width: 265px;
   height: 265px;
-  background: ${theme.colors.profile};
+  background: ${(props) => props.theme.colors.profile};
   border-radius: 200px;
   justify-content: center;
   align-items: center;

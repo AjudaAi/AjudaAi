@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Content } from './styles';
 
-const : React.FC = () => (
+const AssistentCpntainer: React.FC = () => (
   <Container>
     <Content />
   </Container>
 );
 
-export default ;
+export default AssistentCpntainer;

@@ -1,14 +1,18 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 
+import { ThemeProvider } from 'styled-components';
+
 import SplashScreen from '../SplashScreen';
 import Wellcome from '../Wellcome';
 
-import { Container, LinearGradientStyled } from './styles';
 import theme from '../../styles/theme';
+
+import { Container, LinearGradientStyled } from './styles';
 
 const Main: React.FC = () =>  {
     return(
+      <ThemeProvider theme={theme}>
         <Container>
             <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
                 <StatusBar
@@ -20,6 +24,7 @@ const Main: React.FC = () =>  {
                 {/* <Wellcome /> */}
             </LinearGradientStyled>
         </Container>
+      </ThemeProvider>
     );
 }
 
