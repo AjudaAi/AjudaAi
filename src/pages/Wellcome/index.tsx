@@ -1,13 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
 import Profile from '../../components/Profile';
-// import { Container } from './styles';
+import { Container, SubTitle, Title } from './styles';
 
 const Wellcome: React.FC = () => {
   return (
-        <View>
+        <Container>
+            <Title>Assistente ajuda aí!</Title>
+            <SubTitle>Apoio por voz</SubTitle>
             <Profile />
-        </View>
+        </Container>
   );
 }
 
