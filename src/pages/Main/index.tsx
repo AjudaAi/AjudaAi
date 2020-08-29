@@ -4,6 +4,7 @@ import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 
 import SplashScreen from '../SplashScreen';
+import Wellcome from '../Wellcome';
 
 import theme from '../../styles/theme';
 
@@ -14,12 +15,13 @@ const Main: React.FC = () =>  {
       <ThemeProvider theme={theme}>
         <Container>
             <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
-                <SplashScreen />
                 <StatusBar
                     backgroundColor={theme.colors.sideBarColor}
                     barStyle="default"
                     translucent
                 />
+                {/* <SplashScreen /> */}
+                <Wellcome />
             </LinearGradientStyled>
         </Container>
         </ThemeProvider>
