@@ -9,8 +9,8 @@ declare module 'styled-components' {
             secondary: string;
 
             sideBarColor: string;
-            gradientBackgroundColor: Array<string>
-            
+            gradientBackgroundColor: Array<string>;
+            profile: string;
         }
     }
 }

@@ -1,15 +1,20 @@
 import React from 'react';
-import { Text } from 'react-native';
 
-import { BoxModel, Container } from './styles';
+import { BoxModelGradient, Container, Avatar, GlassModel } from './styles';
 
+import avatar from '../../assets/tony.jpeg';
+import theme from '../../styles/theme';
 
-export const Profile: React.FC = () => {
+const Profile: React.FC = () => {
   return (
     <Container>
-      <BoxModel>
-        <Text>Profile</Text>
-      </BoxModel>
+      <BoxModelGradient colors={theme.colors.gradientBackgroundColor}>
+        <GlassModel>
+          <Avatar source={avatar}/>
+        </GlassModel>
+      </BoxModelGradient>
     </Container>
   );
 }
+
+export default Profile;
