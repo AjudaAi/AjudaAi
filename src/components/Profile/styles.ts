@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { Image, View } from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
 import theme from '../../styles/theme';
@@ -16,7 +15,7 @@ export const BoxModelGradient = styled(LinearGradient)`
   height: 300px;
   justify-content: center;
   align-items: center;
-  border-radius: 200;
+  border-radius: 200px;
 `;
 
 export const GlassModel = styled.View`

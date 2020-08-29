@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BoxModelGradient, Container, Avatar, GlassModel } from './styles';
 
-import avatar from '../../assets/tony.jpeg';
+import avatar from '../../assets/images/tony.jpeg';
 import theme from '../../styles/theme';
 
 const Profile: React.FC = () => {
