@@ -6,9 +6,11 @@ export const Container = styled.View`
 `;
 
 export const SubTitle = styled.Text`
-  color: #fff;
-  font-size: 32px;
+  color: ${(props => props.theme.colors.primary)};
+  font-family: 'QuesatBoldDemo';
+  font-size: 40px;
   text-align: center;
+  margin-top: 10px;
 `;
 
 export const Image = styled.Image`
