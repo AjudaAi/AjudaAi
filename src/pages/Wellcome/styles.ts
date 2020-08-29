@@ -19,5 +19,5 @@ export const SubTitle = styled.Text`
   color: ${(props => props.theme.colors.textSecondary)};
   font-size: 18px; 
   margin-top: 8px;
-  font-family: 'QuesatRegularDemo';
+  font-family: 'QuesatRegular';
 `;
