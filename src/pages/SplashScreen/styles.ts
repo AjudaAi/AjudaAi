@@ -8,9 +8,9 @@ export const Container = styled.View`
 export const SubTitle = styled.Text`
   color: ${(props => props.theme.colors.text)};
   font-family: 'QuesatBoldDemo';
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
-  margin-top: 10px;
+  transform: translateY(28px);
 `;
 
 export const Image = styled.Image`
