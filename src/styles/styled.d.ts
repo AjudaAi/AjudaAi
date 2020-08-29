@@ -7,10 +7,10 @@ declare module 'styled-components' {
         colors: {
             primary: string;
             secondary: string;
-
+            text: string;
             sideBarColor: string;
             gradientBackgroundColor: Array<string>
-            
+
         }
     }
 }

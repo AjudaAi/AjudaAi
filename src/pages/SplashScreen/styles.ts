@@ -6,7 +6,7 @@ export const Container = styled.View`
 `;
 
 export const SubTitle = styled.Text`
-  color: #fff;
+  color: ${(props) => props.theme.colors.text};
   font-size: 32px;
   text-align: center;
 `;
