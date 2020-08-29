@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Container, SubTitle, Image } from './styles';
 import logo from '../../assets/logo.jpg';
 
+import { Container, SubTitle, Image } from './styles';
 /*
  - Container
  - Logo
