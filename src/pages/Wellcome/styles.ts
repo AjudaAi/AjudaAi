@@ -7,9 +7,10 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
-  font-family: 'QuesatRegularDemo';
+  font-family: inherit;
+  font-weight: 300;
   font-size: 28px;
-  color: ${(props => props.theme.colors.textSecondary)};
+  color: ${(props => props.theme.colors.textPrimary)};
 `;
 
 export const SubTitle = styled.Text`

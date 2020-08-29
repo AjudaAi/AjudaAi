@@ -20,7 +20,7 @@ const Main: React.FC = () =>  {
                     barStyle="default"
                     translucent
                 />
-                <SplashScreen />
+                {/* <SplashScreen /> */}
                 <Wellcome />
             </LinearGradientStyled>
         </Container>
