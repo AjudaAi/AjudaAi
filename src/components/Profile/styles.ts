@@ -17,10 +17,10 @@ export const BoxModelGradient = styled(LinearGradient)`
 `;
 
 export const GlassModel = styled.View`
-  width: 265;
+  width: 265px;
   height: 265px;
   background: ${(props) => props.theme.colors.profile};
-  border-radius: 200;
+  border-radius: 200px;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(0,0,0,.1);

@@ -54,9 +54,16 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ajudaai/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+<<<<<<< HEAD
 		F2970F4012F3444AB1968B9A /* QuesatBold.otf */ = {isa = PBXFileReference; name = "QuesatBold.otf"; path = "../assets/fonts/QuesatBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CB0B6273E128472EA7D1DC55 /* QuesatLight.otf */ = {isa = PBXFileReference; name = "QuesatLight.otf"; path = "../assets/fonts/QuesatLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		5079EFC82EF248C383E430C4 /* QuesatRegular.otf */ = {isa = PBXFileReference; name = "QuesatRegular.otf"; path = "../assets/fonts/QuesatRegular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+=======
+		F94E7247BFDA49949BC785C5 /* Quesat Bold Demo.otf */ = {isa = PBXFileReference; name = "Quesat Bold Demo.otf"; path = "../assets/fonts/Quesat Bold Demo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6D309C69511D4315B12B17BC /* Quesat Regular Demo.otf */ = {isa = PBXFileReference; name = "Quesat Regular Demo.otf"; path = "../assets/fonts/Quesat Regular Demo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26BDB0F9BDEE49EA8ABB7A86 /* QuesatBoldDemo.otf */ = {isa = PBXFileReference; name = "QuesatBoldDemo.otf"; path = "../assets/fonts/QuesatBoldDemo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D67FABD3E0644A8F9B97B3CA /* QuesatRegularDemo.otf */ = {isa = PBXFileReference; name = "QuesatRegularDemo.otf"; path = "../assets/fonts/QuesatRegularDemo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+>>>>>>> dcaafddb4207e78128840a61dbd8124ad2848141
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +153,11 @@
 				00E356EF1AD99517003FC87E /* ajudaaiTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+<<<<<<< HEAD
 				DF0706FBAD9045D885F24927 /* Resources */,
+=======
+				462EFCE8B2C045C68DDAA75D /* Resources */,
+>>>>>>> dcaafddb4207e78128840a61dbd8124ad2848141
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -164,12 +175,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		DF0706FBAD9045D885F24927 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
 				F2970F4012F3444AB1968B9A /* QuesatBold.otf */,
 				CB0B6273E128472EA7D1DC55 /* QuesatLight.otf */,
 				5079EFC82EF248C383E430C4 /* QuesatRegular.otf */,
+=======
+		462EFCE8B2C045C68DDAA75D /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				F94E7247BFDA49949BC785C5 /* Quesat Bold Demo.otf */,
+				6D309C69511D4315B12B17BC /* Quesat Regular Demo.otf */,
+				26BDB0F9BDEE49EA8ABB7A86 /* QuesatBoldDemo.otf */,
+				D67FABD3E0644A8F9B97B3CA /* QuesatRegularDemo.otf */,
+>>>>>>> dcaafddb4207e78128840a61dbd8124ad2848141
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -313,9 +334,16 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+<<<<<<< HEAD
 				ED32C4D3548B42E6AFB07128 /* QuesatBold.otf in Resources */,
 				4892E6A2D83B48E9AB9B31AD /* QuesatLight.otf in Resources */,
 				595DA0F607964D9B91B35287 /* QuesatRegular.otf in Resources */,
+=======
+				1964018A901E4C569A5D6B98 /* Quesat Bold Demo.otf in Resources */,
+				7019CC2772C149759BC3F88A /* Quesat Regular Demo.otf in Resources */,
+				0D9D9A55F56446AE906EE4E9 /* QuesatBoldDemo.otf in Resources */,
+				9199A5DDAF88408881B41C60 /* QuesatRegularDemo.otf in Resources */,
+>>>>>>> dcaafddb4207e78128840a61dbd8124ad2848141
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

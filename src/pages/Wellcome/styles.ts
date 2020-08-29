@@ -7,10 +7,9 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'QuesatRegularDemo';
   font-size: 30px;
   color: #fff;
-  font-weight: 300;
   opacity: .8;
 `;
 
@@ -18,8 +17,8 @@ export const SubTitle = styled.Text`
   margin-bottom: 32px;
   line-height: 22px;
   color: #eee;
-  font-size: 18px;
-  font-weight: 300; 
-  opacity: .8px;
+  font-size: 18px; 
+  opacity: .8;
   margin-top: 8px;
+  font-family: 'QuesatRegularDemo';
 `;
