@@ -20,6 +20,7 @@
 		7019CC2772C149759BC3F88A /* Quesat Regular Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D309C69511D4315B12B17BC /* Quesat Regular Demo.otf */; };
 		0D9D9A55F56446AE906EE4E9 /* QuesatBoldDemo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26BDB0F9BDEE49EA8ABB7A86 /* QuesatBoldDemo.otf */; };
 		9199A5DDAF88408881B41C60 /* QuesatRegularDemo.otf in Resources */ = {isa = PBXBuildFile; fileRef = D67FABD3E0644A8F9B97B3CA /* QuesatRegularDemo.otf */; };
+		E639D262EA1D4A0580263AE3 /* QuesatLightDemo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 371CD0D9888F4C718F330DBE /* QuesatLightDemo.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		6D309C69511D4315B12B17BC /* Quesat Regular Demo.otf */ = {isa = PBXFileReference; name = "Quesat Regular Demo.otf"; path = "../assets/fonts/Quesat Regular Demo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		26BDB0F9BDEE49EA8ABB7A86 /* QuesatBoldDemo.otf */ = {isa = PBXFileReference; name = "QuesatBoldDemo.otf"; path = "../assets/fonts/QuesatBoldDemo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D67FABD3E0644A8F9B97B3CA /* QuesatRegularDemo.otf */ = {isa = PBXFileReference; name = "QuesatRegularDemo.otf"; path = "../assets/fonts/QuesatRegularDemo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		371CD0D9888F4C718F330DBE /* QuesatLightDemo.otf */ = {isa = PBXFileReference; name = "QuesatLightDemo.otf"; path = "../assets/fonts/QuesatLightDemo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				6D309C69511D4315B12B17BC /* Quesat Regular Demo.otf */,
 				26BDB0F9BDEE49EA8ABB7A86 /* QuesatBoldDemo.otf */,
 				D67FABD3E0644A8F9B97B3CA /* QuesatRegularDemo.otf */,
+				371CD0D9888F4C718F330DBE /* QuesatLightDemo.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				7019CC2772C149759BC3F88A /* Quesat Regular Demo.otf in Resources */,
 				0D9D9A55F56446AE906EE4E9 /* QuesatBoldDemo.otf in Resources */,
 				9199A5DDAF88408881B41C60 /* QuesatRegularDemo.otf in Resources */,
+				E639D262EA1D4A0580263AE3 /* QuesatLightDemo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

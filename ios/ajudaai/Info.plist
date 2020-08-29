@@ -54,9 +54,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>UIAppFonts</key>
-	<array>
-		<string>QuesatBoldDemo.otf</string>
-		<string>QuesatRegularDemo.otf</string>
-	</array>
+	<array/>
 </dict>
 </plist>

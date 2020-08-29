@@ -21,7 +21,7 @@ const Main: React.FC = () =>  {
                     translucent
                 />
                 <SplashScreen />
-                {/* <Wellcome /> */}
+                <Wellcome />
             </LinearGradientStyled>
         </Container>
       </ThemeProvider>
