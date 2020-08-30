@@ -19,6 +19,8 @@
 		ED32C4D3548B42E6AFB07128 /* QuesatBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2970F4012F3444AB1968B9A /* QuesatBold.otf */; };
 		4892E6A2D83B48E9AB9B31AD /* QuesatLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB0B6273E128472EA7D1DC55 /* QuesatLight.otf */; };
 		595DA0F607964D9B91B35287 /* QuesatRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5079EFC82EF248C383E430C4 /* QuesatRegular.otf */; };
+		637BEF11B5F24D7EB8FEEF6E /* QuesatLightDemo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60BCEA0A8C524D77A3E860FD /* QuesatLightDemo.otf */; };
+		9FAA6F1B8DEA438FA9D06B6A /* RalewayRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D86127EE0F143EA807F7C46 /* RalewayRegular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		F2970F4012F3444AB1968B9A /* QuesatBold.otf */ = {isa = PBXFileReference; name = "QuesatBold.otf"; path = "../assets/fonts/QuesatBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CB0B6273E128472EA7D1DC55 /* QuesatLight.otf */ = {isa = PBXFileReference; name = "QuesatLight.otf"; path = "../assets/fonts/QuesatLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		5079EFC82EF248C383E430C4 /* QuesatRegular.otf */ = {isa = PBXFileReference; name = "QuesatRegular.otf"; path = "../assets/fonts/QuesatRegular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		60BCEA0A8C524D77A3E860FD /* QuesatLightDemo.otf */ = {isa = PBXFileReference; name = "QuesatLightDemo.otf"; path = "../assets/fonts/QuesatLightDemo.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D86127EE0F143EA807F7C46 /* RalewayRegular.ttf */ = {isa = PBXFileReference; name = "RalewayRegular.ttf"; path = "../assets/fonts/RalewayRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				F2970F4012F3444AB1968B9A /* QuesatBold.otf */,
 				CB0B6273E128472EA7D1DC55 /* QuesatLight.otf */,
 				5079EFC82EF248C383E430C4 /* QuesatRegular.otf */,
+				60BCEA0A8C524D77A3E860FD /* QuesatLightDemo.otf */,
+				8D86127EE0F143EA807F7C46 /* RalewayRegular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -316,6 +322,8 @@
 				ED32C4D3548B42E6AFB07128 /* QuesatBold.otf in Resources */,
 				4892E6A2D83B48E9AB9B31AD /* QuesatLight.otf in Resources */,
 				595DA0F607964D9B91B35287 /* QuesatRegular.otf in Resources */,
+				637BEF11B5F24D7EB8FEEF6E /* QuesatLightDemo.otf in Resources */,
+				9FAA6F1B8DEA438FA9D06B6A /* RalewayRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
