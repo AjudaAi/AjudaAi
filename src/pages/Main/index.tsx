@@ -32,8 +32,8 @@ const Main: React.FC = () => {
             barStyle="default"
             translucent
           />
-          <SplashScreen />
-          {/* {stepsComponents[currentStepPages]} */}
+          {/* <SplashScreen /> */}
+          {stepsComponents[currentStepPages]}
         </LinearGradientStyled>
       </Container>
     </ThemeProvider>
