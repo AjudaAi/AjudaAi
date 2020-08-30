@@ -10,10 +10,10 @@ export const SubTitle = styled.Text`
   font-family: 'QuesatBold';
   font-size: 45px;
   text-align: center;
-  transform: translateY(28px);
+  transform: translateY(25px);
 `;
 
 export const Image = styled.Image`
-  width: 250px;
-  height: 250px;
+  width: 600px;
+  height: 200px;
 `;
