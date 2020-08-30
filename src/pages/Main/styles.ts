@@ -16,3 +16,7 @@ export const LinearGradientStyled = styled(LinearGradient)`
   height: 100%;
   width: 100%;
 `;
+
+export const Test = styled.View`
+  flex-flow: row wrap;
+`;
