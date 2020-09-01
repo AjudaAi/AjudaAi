@@ -7,5 +7,8 @@ export default {
     textSecondary: '#65DFEE',
     gradientBackgroundColor: ['#15ABE0', '#30D8C2'],
     profile: '#16D9D6',
+    textButton: '#333',
+    borderBox: '#00000029',
+    backgroundButton: '#96e9e3',
   },
 };

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar,  } from 'react-native';
 
 import { ThemeProvider } from 'styled-components';
 
@@ -8,7 +8,9 @@ import Wellcome from '../Wellcome';
 
 import theme from '../../styles/theme';
 
-import { Container, LinearGradientStyled } from './styles';
+import { Container,Test, LinearGradientStyled } from './styles';
+
+import Button from '../../components/Button';
 
 const Main: React.FC = () => {
   const [currentStepPages, setCurrentStepPages] = useState(0);
@@ -34,6 +36,13 @@ const Main: React.FC = () => {
           />
           {/* <SplashScreen /> */}
           {stepsComponents[currentStepPages]}
+
+          <Test>
+            <Button text="Eu mesmo!" action={() => {}} />
+            <Button text="Um familiar!" action={() => {}} />
+          </Test>
+          
+          {/* <Button text="Um familiar" onPress={() => handleHello} /> */}
         </LinearGradientStyled>
       </Container>
     </ThemeProvider>

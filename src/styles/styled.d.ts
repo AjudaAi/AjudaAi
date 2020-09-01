@@ -12,6 +12,9 @@ declare module 'styled-components' {
             sideBarColor: string;
             gradientBackgroundColor: Array<string>;
             profile: string;
+            textButton: string;
+            backgroundButton: string;
+            borderBox: string;
         }
     }
 }
