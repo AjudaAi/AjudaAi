@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useCallback } from 'react';
+
 import Profile from '../../components/Profile';
-import { Container, SubTitle, Title } from './styles';
+import CardText from '../../components/TextCard';
 
 import dataPage from './dataPagesWelcome';
 
+import { Container, SubTitle, Title } from './styles';
+
 const Wellcome: React.FC = () => {
-  const [currentIdStateWelcome, setCurrentIdStateWelcome] = useState(0);
+  const [currentIdStateWelcome, setCurrentIdStateWelcome] = useState(2);
 
   const nextStep = useCallback(() => {
     setCurrentIdStateWelcome(prev => dataPage[prev].nextId);
@@ -19,9 +22,12 @@ const Wellcome: React.FC = () => {
 
   return (
     <Container>
-      <Title>Assistente Ajuda aí!</Title>
-      <SubTitle>Apoio por voz</SubTitle>
-      <Profile />
+      <Title>{dataPage[currentIdStateWelcome].title}</Title>
+      <SubTitle>{dataPage[currentIdStateWelcome].subtitle}</SubTitle>
+      <Profile avatar={dataPage[currentIdStateWelcome].profile} />
+      {dataPage[currentIdStateWelcome].textCard &&
+        (<CardText>{dataPage[currentIdStateWelcome].textCard}</CardText>
+      )}
     </Container>
   );
 };

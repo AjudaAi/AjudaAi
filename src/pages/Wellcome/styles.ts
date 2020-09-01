@@ -7,17 +7,16 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
-  font-size: 30px;
   font-family: 'RalewayRegular';
-  font-size: 28px;
+  font-size: 26px;
   color: ${(props => props.theme.colors.textPrimary)};
 `;
 
 export const SubTitle = styled.Text`
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   line-height: 22px;
   color: ${(props => props.theme.colors.textSecondary)};
-  font-size: 23px; 
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 8px;
   font-family: 'RalewayRegular';
 `;

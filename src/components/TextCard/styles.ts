@@ -1,23 +1,18 @@
 import styled from 'styled-components/native';
-import { keyframes } from 'styled-components';
 
-const type = keyframes`
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 22ch;
-  }
-`;
-
-export const View = styled.View`
-  background: #eaeaeaaa;
+export const Container = styled.View`
+  background: rgba(255, 255, 255, .2);
   justify-content: center;
   align-items: center;
+
+  border-radius: 15px;
+  margin: 80px 10px 30px;
+  padding: 10px;
 `;
 
-export const TextAnimated = styled.Text`
-  white-space: nowrap;
-  animation: ${type} 3s steps(22);
-  overflow: hidden;
+export const Content = styled.Text`
+  color: #fff;
+  font-family: 'RalewayRegular';
+  font-size: 16px;
+  text-align: center;
 `;
