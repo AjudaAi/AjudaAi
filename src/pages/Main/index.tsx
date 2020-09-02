@@ -4,19 +4,18 @@ import { StatusBar,  } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 
 import SplashScreen from '../SplashScreen';
-import Wellcome from '../Wellcome';
+import Welcome from '../Welcome';
 
 import theme from '../../styles/theme';
 
-import { Container,Test, LinearGradientStyled } from './styles';
+import { Container, LinearGradientStyled } from './styles';
 
-import Button from '../../components/Button';
 
 const Main: React.FC = () => {
   const [currentStepPages, setCurrentStepPages] = useState(0);
   const [stepsComponents, setStepsComponents] = useState([
     <SplashScreen />,
-    <Wellcome />,
+    <Welcome />,
   ]);
 
   useEffect(() => {
@@ -34,15 +33,8 @@ const Main: React.FC = () => {
             barStyle="default"
             translucent
           />
-          {/* <SplashScreen /> */}
           {stepsComponents[currentStepPages]}
 
-          <Test>
-            <Button text="Eu mesmo!" action={() => {}} />
-            <Button text="Um familiar!" action={() => {}} />
-          </Test>
-          
-          {/* <Button text="Um familiar" onPress={() => handleHello} /> */}
         </LinearGradientStyled>
       </Container>
     </ThemeProvider>

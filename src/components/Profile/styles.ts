@@ -5,6 +5,7 @@ export const Container = styled.View`
   position: relative;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
 `;
 
 export const BoxModelGradient = styled(LinearGradient)`

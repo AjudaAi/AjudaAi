@@ -2,15 +2,14 @@ import React from 'react';
 
 import { TextButton, Touchable } from './styles';
 
-export interface Props {
-  text: string;
-  action(): void;
-} 
+interface Props {
+  onPress: (event: any) => void
+}
 
-const Button: React.FC<Props> = ({ action, text }) => {
+const Button: React.FC<Props> = ({ onPress, children }) => {
   return (
-    <Touchable>
-        <TextButton onPress={action}>{text}</TextButton>
+    <Touchable onPress={onPress}>
+      <TextButton>{children}</TextButton>
     </Touchable>
   );
 }

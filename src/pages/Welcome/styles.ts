@@ -20,3 +20,7 @@ export const SubTitle = styled.Text`
   margin-top: 8px;
   font-family: 'RalewayRegular';
 `;
+
+export const ContainerButton = styled.View`
+  flex-direction: row;
+`;
