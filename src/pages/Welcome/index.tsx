@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Profile from '../../components/Profile';
 import CardText from '../../components/TextCard';
 import Button from '../../components/Button';
-
+import SoundButton from '../../components/SoundButton';
 
 import dataPage from './dataPagesWelcome';
 
@@ -34,6 +35,9 @@ const Welcome: React.FC = () => {
       <Title>{dataPage[currentIdStateWelcome].title}</Title>
       <SubTitle>{dataPage[currentIdStateWelcome].subtitle}</SubTitle>
       <Profile avatar={dataPage[currentIdStateWelcome].profile} />
+      
+      <SoundButton icon={<Icon name="volume-up" size={28}/>}/>
+
       {dataPage[currentIdStateWelcome].textCard &&
         (<CardText>{dataPage[currentIdStateWelcome].textCard}</CardText>
       )}
