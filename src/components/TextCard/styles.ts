@@ -13,6 +13,6 @@ export const Container = styled.View`
 export const Content = styled.Text`
   color: #fff;
   font-family: 'RalewayRegular';
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 `;
