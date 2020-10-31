@@ -10,11 +10,11 @@ import theme from '../../styles/theme';
 
 import { Container, LinearGradientStyled } from './styles';
 
-const OpeningTutorial: React.FC = () => {
+const OpeningTutorial: React.FC = ({ navigation }) => {
   const [currentStepPages, setCurrentStepPages] = useState(0);
   const [stepsComponents, setStepsComponents] = useState([
     <SplashScreen />,
-    <Welcome />,
+    <Welcome navigation={navigation} />,
   ]);
 
   useEffect(() => {
