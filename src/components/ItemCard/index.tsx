@@ -1,18 +1,17 @@
 import React from 'react';
+import { ImageSourcePropType } from 'react-native';
 
-import { Container, ItemText, Item, Icon } from './styles';
+import { Container, ItemText, TutorialImage } from './styles';
 
 interface PropsItemCard {
   text: string;
-  icon: string;
+  image: ImageSourcePropType;
 }
 
-const ItemCard: React.FC<PropsItemCard> = ({ icon, text }) => {
+const ItemCard: React.FC<PropsItemCard> = ({ image, text }) => {
   return (
     <Container>
-      <Item>
-        <Icon name={icon} size={60} />
-      </Item>
+      <TutorialImage source={image} />
       <ItemText>{text}</ItemText>
     </Container>
   );
