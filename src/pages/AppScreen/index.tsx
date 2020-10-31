@@ -7,16 +7,23 @@ import theme from '../../styles/theme';
 
 import imgAvatar from '../../assets/images/perguntando.png';
 
+import imageGmail from '../../assets/images/tutorials/gmail.png';
+import imageNubank from '../../assets/images/tutorials/nubank.png';
+import imageTelegram from '../../assets/images/tutorials/telegram.png';
+import imageTiktok from '../../assets/images/tutorials/tiktok.png';
+import imageWhatsapp from '../../assets/images/tutorials/whatsapp.png';
+import imageGoogleDrive from '../../assets/images/tutorials/google-drive.png';
+
 import { Container, LinearGradientStyled, Content } from './styles';
 
 const AppScreen: React.FC = () => {
   const app = [
-    { name: 'Whatsapp', icon: 'whatsapp' },
-    { name: 'Telegram', icon: 'telegram' },
-    { name: 'Instagram', icon: 'instagram' },
-    { name: 'Instagram', icon: 'instagram' },
-    { name: 'Instagram', icon: 'instagram' },
-    { name: 'Instagram', icon: 'instagram' },
+    { name: 'Whatsapp', image: imageWhatsapp },
+    { name: 'Gmail', image: imageGmail },
+    { name: 'Telegram', image: imageTelegram },
+    { name: 'Tiktok', image: imageTiktok },
+    { name: 'Nubank', image: imageNubank },
+    { name: 'Drive', image: imageGoogleDrive },
   ];
 
   const numColumns = 2;
@@ -31,7 +38,7 @@ const AppScreen: React.FC = () => {
             numColumns={numColumns}
             data={app}
             renderItem={obj => {
-              return <ItemCard text={obj.item.name} icon={obj.item.icon} />;
+              return <ItemCard text={obj.item.name} image={obj.item.image} />;
             }}
           />
         </Content>
