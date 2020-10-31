@@ -2,10 +2,10 @@ import styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
 
 export const Container = styled.View`
-    flex: 1;
+  flex: 1;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const LinearGradientStyled = styled(LinearGradient)`

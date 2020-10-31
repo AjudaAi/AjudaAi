@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import Profile from '../../components/Profile';
-import CardText from '../../components/TextCard';
-import Button from '../../components/Button';
-import SoundButton from '../../components/SoundButton';
+import Profile from '../../../components/Profile';
+import CardText from '../../../components/TextCard';
+import Button from '../../../components/Button';
+import SoundButton from '../../../components/SoundButton';
 
 import dataPage from './dataPagesWelcome';
 
@@ -23,7 +23,7 @@ const Welcome: React.FC = () => {
   const prevStep = useCallback(() => {
     if (prev => dataPage[prev].prevId !== null) {
       setCurrentIdStateWelcome(prev => dataPage[prev].prevId);
-    }else {
+    } else {
       setCurrentIdStateWelcome(7);
     }
   }, []);
@@ -34,17 +34,18 @@ const Welcome: React.FC = () => {
       <SubTitle>{dataPage[currentIdStateWelcome].subtitle}</SubTitle>
       <Profile avatar={dataPage[currentIdStateWelcome].profile} />
 
-      <SoundButton icon={<Icon name="volume-up" size={28}/>}/>
+      <SoundButton icon={<Icon name="volume-up" size={28} />} />
 
-      {dataPage[currentIdStateWelcome].textCard &&
-        (<CardText>{dataPage[currentIdStateWelcome].textCard}</CardText>
+      {dataPage[currentIdStateWelcome].textCard && (
+        <CardText>{dataPage[currentIdStateWelcome].textCard}</CardText>
       )}
       <ContainerButton>
-        {dataPage[currentIdStateWelcome].buttonText1 &&
-          <Button onPress={() => nextStep()}>{dataPage[currentIdStateWelcome].buttonText1}</Button>
-        }
+        {dataPage[currentIdStateWelcome].buttonText1 && (
+          <Button onPress={() => nextStep()}>
+            {dataPage[currentIdStateWelcome].buttonText1}
+          </Button>
+        )}
       </ContainerButton>
-
     </Container>
   );
 };

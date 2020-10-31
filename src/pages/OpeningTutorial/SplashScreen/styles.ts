@@ -6,7 +6,7 @@ export const Container = styled.View`
 `;
 
 export const SubTitle = styled.Text`
-  color: ${(props => props.theme.colors.textSecondary)};
+  color: ${props => props.theme.colors.textSecondary};
   font-family: 'QuesatBold';
   font-size: 45px;
   text-align: center;
