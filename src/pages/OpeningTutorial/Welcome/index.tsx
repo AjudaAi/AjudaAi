@@ -10,21 +10,15 @@ import dataPage from './dataPagesWelcome';
 
 import { Container, SubTitle, Title, ContainerButton } from './styles';
 
-const Welcome: React.FC = () => {
+const Welcome: React.FC = ({ navigation }) => {
   const [currentIdStateWelcome, setCurrentIdStateWelcome] = useState(0);
-  const nextStep = useCallback(() => {
-    if (prev => dataPage[prev].nextId !== null) {
-      setCurrentIdStateWelcome(prev => dataPage[prev].nextId);
-    } else {
-      setCurrentIdStateWelcome(7);
+  const nextStep = useCallback((id: number) => {
+    if (id === 11) {
+      navigation.navigate('Dashboard');
+      return;
     }
-  }, []);
-
-  const prevStep = useCallback(() => {
-    if (prev => dataPage[prev].prevId !== null) {
-      setCurrentIdStateWelcome(prev => dataPage[prev].prevId);
-    } else {
-      setCurrentIdStateWelcome(7);
+    if (dataPage[id].nextId !== null) {
+      setCurrentIdStateWelcome(dataPage[id].nextId);
     }
   }, []);
 
@@ -40,8 +34,8 @@ const Welcome: React.FC = () => {
         <CardText>{dataPage[currentIdStateWelcome].textCard}</CardText>
       )}
       <ContainerButton>
-        {dataPage[currentIdStateWelcome].buttonText1 && (
-          <Button onPress={() => nextStep()}>
+        {dataPage[currentIdStateWelcome].nextId && (
+          <Button onPress={() => nextStep(currentIdStateWelcome)}>
             {dataPage[currentIdStateWelcome].buttonText1}
           </Button>
         )}

@@ -3,16 +3,24 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import { ThemeProvider } from 'styled-components';
+
 import OpeningTutorial from './pages/OpeningTutorial';
+import AppScreen from './pages/AppScreen';
+
+import theme from './styles/theme';
 
 const App: React.FC = () => {
   const Stack = createStackNavigator();
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component={OpeningTutorial} />
-      </Stack.Navigator>
+      <ThemeProvider theme={theme}>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Home" component={OpeningTutorial} />
+          <Stack.Screen name="Dashboard" component={AppScreen} />
+        </Stack.Navigator>
+      </ThemeProvider>
     </NavigationContainer>
   );
 };
