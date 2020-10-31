@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { StatusBar,  } from 'react-native';
+import { StatusBar } from 'react-native';
 
 import { ThemeProvider } from 'styled-components';
 
-import SplashScreen from '../SplashScreen';
-import Welcome from '../Welcome';
+import SplashScreen from './SplashScreen';
+import Welcome from './Welcome';
 
 import theme from '../../styles/theme';
 
 import { Container, LinearGradientStyled } from './styles';
 
-
-const Main: React.FC = () => {
+const OpeningTutorial: React.FC = () => {
   const [currentStepPages, setCurrentStepPages] = useState(0);
   const [stepsComponents, setStepsComponents] = useState([
     <SplashScreen />,
@@ -34,11 +33,10 @@ const Main: React.FC = () => {
             translucent
           />
           {stepsComponents[currentStepPages]}
-
         </LinearGradientStyled>
       </Container>
     </ThemeProvider>
   );
 };
 
-export default Main;
+export default OpeningTutorial;
