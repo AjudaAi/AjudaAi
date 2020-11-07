@@ -5988,6 +5988,11 @@ react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-native-android-pip@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-android-pip/-/react-native-android-pip-1.0.1.tgz#4ff222ea8c586eacd95e25a239920e68e9facb32"
+  integrity sha512-DJ1ycT/QnbnHrfipIOPNmx/YDNS11zY5uVGS+eZcFL1TLgb+9JbctNiN0sEiC6xwRTpcxJZQW7gJXQr0yYE5NQ==
+
 react-native-gesture-handler@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.8.0.tgz#18f61f51da50320f938957b0ee79bc58f47449dc"
@@ -6007,6 +6012,11 @@ react-native-linear-gradient@^2.5.6:
   version "2.5.6"
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
   integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
+
+react-native-picture-in-picture@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-picture-in-picture/-/react-native-picture-in-picture-0.0.1.tgz#6943682ca2fbd172339937368af3d07524db0803"
+  integrity sha512-vjAbIIVNXKTempFTZw95yfZklfE07j1XJviCU6q+H5d03LYWgAIn5f3KR2cvitXTRO1wmeNpiB66QQZNjzICMw==
 
 react-native-reanimated@^1.13.1:
   version "1.13.1"

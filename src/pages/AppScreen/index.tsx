@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import PictureInPicture from 'react-native-picture-in-picture';
+
 import { FlatList } from 'react-native';
 
 import Profile from '../../components/Profile';
@@ -26,7 +28,9 @@ const AppScreen: React.FC = () => {
     { name: 'Drive', image: imageGoogleDrive },
   ];
 
-  const numColumns = 2;
+  const pipHandler = useCallback(() => {
+    PictureInPicture.start();
+  }, []);
 
   return (
     <Container>
@@ -35,10 +39,10 @@ const AppScreen: React.FC = () => {
           <Profile avatar={imgAvatar} profileSize="small" />
           <FlatList
             keyExtractor={(item, index) => index.toString()}
-            numColumns={numColumns}
+            numColumns={2}
             data={app}
             renderItem={obj => {
-              return <ItemCard text={obj.item.name} image={obj.item.image} />;
+              return <ItemCard pipView={pipHandler} text={obj.item.name} image={obj.item.image} />;
             }}
           />
         </Content>
