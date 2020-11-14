@@ -29,16 +29,18 @@ const AppScreen: React.FC = () => {
   ];
 
   const pipHandler = useCallback(() => {
-    PictureInPicture.start();
+    // TODO inserir rota para tela de tutoriais
+    // PictureInPicture.start();
+    // navigation.navigate('Dashboard');
   }, []);
 
   return (
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
         <Content>
-          <Profile avatar={imgAvatar} profileSize="small" />
+          <Profile avatar={imgAvatar} profileSize="small" iconImage={imageWhatsapp}/>
           <FlatList
-            keyExtractor={(item, index) => index.toString()}
+            keyExtractor={(_, index) => index.toString()}
             numColumns={2}
             data={app}
             renderItem={obj => {

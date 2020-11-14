@@ -3,6 +3,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 interface PropsAvatar {
   size?: 'small' | 'default';
+  icon?: any;
 }
 
 export const Container = styled.View`
@@ -29,6 +30,7 @@ export const BoxModelGradient = styled(LinearGradient)<PropsAvatar>`
 `;
 
 export const GlassModel = styled.View<PropsAvatar>`
+  position: relative;
   width: 265px;
   height: 265px;
   background: ${props => props.theme.colors.profile};
@@ -46,6 +48,7 @@ export const GlassModel = styled.View<PropsAvatar>`
 `;
 
 export const Avatar = styled.Image<PropsAvatar>`
+  position: relative;  
   width: 200px;
   height: 200px;
   border-radius: 250px;
@@ -56,4 +59,21 @@ export const Avatar = styled.Image<PropsAvatar>`
       width: 100px;
       height: 100px;
     `};
+`;
+
+export const Block = styled.View`
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+`;
+
+export const IconApp = styled.Image<PropsAvatar>`
+  position: absolute; 
+  right: -20px;
+  bottom: -17px; 
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 `;
