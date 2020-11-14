@@ -18,7 +18,7 @@ import imageGoogleDrive from '../../assets/images/tutorials/google-drive.png';
 
 import { Container, LinearGradientStyled, Content } from './styles';
 
-const AppScreen: React.FC = () => {
+const AppScreen: React.FC = ({ navigation }) => {
   const app = [
     { name: 'Whatsapp', image: imageWhatsapp },
     { name: 'Gmail', image: imageGmail },
@@ -31,14 +31,14 @@ const AppScreen: React.FC = () => {
   const pipHandler = useCallback(() => {
     // TODO inserir rota para tela de tutoriais
     // PictureInPicture.start();
-    // navigation.navigate('Dashboard');
+    navigation.navigate('Tutorials');
   }, []);
 
   return (
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
         <Content>
-          <Profile avatar={imgAvatar} profileSize="small" iconImage={imageWhatsapp}/>
+          <Profile avatar={imgAvatar} profileSize="small" />
           <FlatList
             keyExtractor={(_, index) => index.toString()}
             numColumns={2}

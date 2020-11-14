@@ -1,13 +1,14 @@
 import React from 'react';
+import { ImageSourcePropType } from 'react-native';
 
 import { BoxModelGradient, Container,Block, Avatar, GlassModel, IconApp } from './styles';
 
 import theme from '../../styles/theme';
 
 interface PropsProfile {
-  avatar: any;
+  avatar: ImageSourcePropType;
   profileSize: 'small' | 'default';
-  iconImage?: any;
+  iconImage?: ImageSourcePropType;
 }
 
 const Profile: React.FC<PropsProfile> = ({ avatar, profileSize, iconImage }) => {

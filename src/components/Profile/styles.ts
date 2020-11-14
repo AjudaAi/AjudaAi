@@ -1,9 +1,10 @@
+import { ImageSourcePropType } from 'react-native';
 import styled, { css } from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
 
 interface PropsAvatar {
   size?: 'small' | 'default';
-  icon?: any;
+  icon?: ImageSourcePropType;
 }
 
 export const Container = styled.View`
@@ -71,8 +72,8 @@ export const Block = styled.View`
 
 export const IconApp = styled.Image<PropsAvatar>`
   position: absolute; 
-  right: -20px;
-  bottom: -17px; 
+  right: -17px;
+  bottom: -15px; 
   width: 50px;
   height: 50px;
   border-radius: 10px;
