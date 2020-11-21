@@ -5,7 +5,6 @@ import {
 
 interface PropsSizeTextCard {
   size: 'small' | 'medium' | 'large';
-  // size: string;
 }
 
 export function resolveSizeTexCard({ size }: PropsSizeTextCard) {

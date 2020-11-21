@@ -8,7 +8,7 @@ export interface PropsTextCard {
   sizeTextCard: 'small' | 'medium' | 'large';
 }
 
-const TextCard: React.FC = ({ sizeTextCard, children }: PropsTextCard) => {
+const TextCard: React.FC<PropsTextCard> = ({ sizeTextCard, children }: PropsTextCard) => {
   const containerStyles = resolveSizeTexCard({ size: sizeTextCard });  
   const styles = StyleSheet.create({ containerStyles});
 

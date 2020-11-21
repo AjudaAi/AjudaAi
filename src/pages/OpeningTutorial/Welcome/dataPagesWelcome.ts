@@ -1,9 +1,9 @@
-import profileOla from '../../../assets/images/ola.png';
-import profileVamosComecar from '../../../assets/images/vamosComecar.png';
-import profileError from '../../../assets/images/digitouClicouErrado.png';
-import profileAguardando from '../../../assets/images/aguardando.png';
-import profilePerguntando from '../../../assets/images/perguntando.png';
-import profileSucesso from '../../../assets/images/cadastroFeitoComSucesso.png';
+import profileOla from '../../../assets/images/avatar/ola.png';
+import profileVamosComecar from '../../../assets/images/avatar/vamosComecar.png';
+import profileError from '../../../assets/images/avatar/digitouClicouErrado.png';
+import profileAguardando from '../../../assets/images/avatar/aguardando.png';
+import profilePerguntando from '../../../assets/images/avatar/perguntando.png';
+import profileSucesso from '../../../assets/images/avatar/cadastroFeitoComSucesso.png';
 
 interface WelcomeData {
   id: number;
