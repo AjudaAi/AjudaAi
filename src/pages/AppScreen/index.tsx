@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import PictureInPicture from 'react-native-picture-in-picture';
+// import PictureInPicture from 'react-native-picture-in-picture';
 
 import { FlatList } from 'react-native';
 

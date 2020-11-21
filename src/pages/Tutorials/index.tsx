@@ -8,7 +8,7 @@ import imgAvatar from '../../assets/images/avatar/perguntando.png';
 import whatsapp from '../../assets/images/tutorials/whatsapp.png';
 import tutorialWhatsapp from '../../assets/tutorials/whatsapp/slide1.1.png';
 
-import tutorialsWhatsapp from './modules/whatsapp/content';
+// import tutorialsWhatsapp from './modules/whatsapp/content';
 
 import TextCard from '../../components/TextCard';
 
@@ -28,7 +28,6 @@ const Tutorials: React.FC = () => {
           <CardTutorial 
             title="Como mandar áudios e outras coisas!"
             thumbnail={tutorialWhatsapp}
-            data={tutorialsWhatsapp}
           />
         </Section>
       </LinearGradientStyled>

@@ -8,7 +8,7 @@ target 'ajudaai' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'react-native-picture-in-picture', :path => '../node_modules/react-native-picture-in-picture'
+  # pod 'react-native-picture-in-picture', :path => '../node_modules/react-native-picture-in-picture'
 
   target 'ajudaaiTests' do
     inherit! :complete
