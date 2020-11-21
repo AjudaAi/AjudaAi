@@ -17,7 +17,6 @@
     "polished": "^3.6.5",
     "react": "16.13.1",
     "react-native": "0.63.2",
-    "react-native-android-pip": "^1.0.1",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-picture-in-picture": "^0.0.1",
