@@ -1,5 +1,5 @@
 import React, { useRef, useCallback } from 'react';
-import { View } from 'react-native';
+import { View, ImageSourcePropType } from 'react-native';
 import { Modalize } from 'react-native-modalize';
 
 import Profile from '../../components/Profile';
@@ -12,16 +12,25 @@ import tutorialWhatsapp from '../../assets/tutorials/whatsapp/slide1.1.png';
 
 import tutorialsWhatsapp from './modules/whatsapp/content';
 
+import CarouselAjudaAi from '../../components/CarouselAjudaAi';
+
 import TextCard from '../../components/TextCard';
 
 import { Container, LinearGradientStyled, Text, Section } from './styles';
 
 const Tutorials: React.FC = () => {
   const modalizeRef = useRef<Modalize>(null);
-
   const onOpen = useCallback(() => {
     modalizeRef.current?.open();
   }, []);
+
+  const handleRenderItems = (item: any , index: Number) => {
+    return (
+      <View>
+        <Text>Test</Text>
+      </View>
+    );
+  }
 
   return (
     <Container>
@@ -40,16 +49,13 @@ const Tutorials: React.FC = () => {
             modal={onOpen}
           />
         </Section>
-        {/* Modal */}
+        
         <Modalize
           ref={modalizeRef}
           scrollViewProps={{ showsVerticalScrollIndicator: false }}
-          snapPoint={320}
+          snapPoint={500}
         >
-          {/* Carrosel */}
-          <View>
-            <Text>Carrosel</Text>
-          </View>
+          <CarouselAjudaAi />
         </Modalize>
       </LinearGradientStyled>
     </Container>
