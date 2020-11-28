@@ -7,26 +7,25 @@ interface ICardTutorial {
   thumbnail: ImageSourcePropType;
   title: string;
   data?: any;
+  modal(): void;
 }
 
-const CardTutorial: React.FC<ICardTutorial> = ({ thumbnail, title, data }: ICardTutorial) => {
-  
+const CardTutorial: React.FC<ICardTutorial> = ({
+  thumbnail,
+  title,
+  data,
+  modal,
+}: ICardTutorial) => {
   return (
-    <Container>
-      <Block>
-        <Title>
-          {title}
-        </Title>
-        <ImageTutorial source={thumbnail}/>
-
-        {/* <Modal>
-          <View>
-            <Carrosel data={data}></Carrosel>
-          </View>
-        </Modal> */}
-      </Block>
-    </Container>
+    <>
+      <Container>
+        <Block onPress={modal}>
+          <Title>{title}</Title>
+          <ImageTutorial source={thumbnail} />
+        </Block>
+      </Container>
+    </>
   );
-}
+};
 
 export default CardTutorial;

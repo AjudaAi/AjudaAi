@@ -44,7 +44,13 @@ const AppScreen: React.FC = ({ navigation }) => {
             numColumns={2}
             data={app}
             renderItem={obj => {
-              return <ItemCard pipView={pipHandler} text={obj.item.name} image={obj.item.image} />;
+              return (
+                <ItemCard
+                  pipView={pipHandler}
+                  text={obj.item.name}
+                  image={obj.item.image}
+                />
+              );
             }}
           />
         </Content>

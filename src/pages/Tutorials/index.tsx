@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useRef, useCallback } from 'react';
+import { View } from 'react-native';
+import { Modalize } from 'react-native-modalize';
 
 import Profile from '../../components/Profile';
 import CardTutorial from '../../components/CardTutorial';
@@ -15,6 +17,12 @@ import TextCard from '../../components/TextCard';
 import { Container, LinearGradientStyled, Text, Section } from './styles';
 
 const Tutorials: React.FC = () => {
+  const modalizeRef = useRef<Modalize>(null);
+
+  const onOpen = useCallback(() => {
+    modalizeRef.current?.open();
+  }, []);
+
   return (
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
@@ -25,15 +33,27 @@ const Tutorials: React.FC = () => {
 
         <Section>
           <Text>Aulas disponíveis</Text>
-          <CardTutorial 
+          <CardTutorial
             title="Como mandar áudios e outras coisas!"
             thumbnail={tutorialWhatsapp}
             data={tutorialsWhatsapp}
+            modal={onOpen}
           />
         </Section>
+        {/* Modal */}
+        <Modalize
+          ref={modalizeRef}
+          scrollViewProps={{ showsVerticalScrollIndicator: false }}
+          snapPoint={320}
+        >
+          {/* Carrosel */}
+          <View>
+            <Text>Carrosel</Text>
+          </View>
+        </Modalize>
       </LinearGradientStyled>
     </Container>
   );
-}
+};
 
 export default Tutorials;

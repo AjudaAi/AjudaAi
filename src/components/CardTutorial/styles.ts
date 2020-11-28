@@ -18,14 +18,13 @@ export const Title = styled.Text`
   z-index: 1001;
 `;
 
-export const Block = styled.View`
+export const Block = styled.TouchableOpacity`
   position: relative;
   height: 230px;
   width: 45%;
   border-radius: 15px;
   background: #00000029;
 `;
-
 
 export const ImageTutorial = styled.Image`
   height: 100%;
