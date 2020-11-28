@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+// import PictureInPicture from 'react-native-picture-in-picture';
+
 import { FlatList } from 'react-native';
 
 import Profile from '../../components/Profile';
 import ItemCard from '../../components/ItemCard';
 import theme from '../../styles/theme';
 
-import imgAvatar from '../../assets/images/perguntando.png';
+import imgAvatar from '../../assets/images/avatar/perguntando.png';
 
 import imageGmail from '../../assets/images/tutorials/gmail.png';
 import imageNubank from '../../assets/images/tutorials/nubank.png';
@@ -16,7 +18,7 @@ import imageGoogleDrive from '../../assets/images/tutorials/google-drive.png';
 
 import { Container, LinearGradientStyled, Content } from './styles';
 
-const AppScreen: React.FC = () => {
+const AppScreen: React.FC = ({ navigation }) => {
   const app = [
     { name: 'Whatsapp', image: imageWhatsapp },
     { name: 'Gmail', image: imageGmail },
@@ -26,7 +28,11 @@ const AppScreen: React.FC = () => {
     { name: 'Drive', image: imageGoogleDrive },
   ];
 
-  const numColumns = 2;
+  const pipHandler = useCallback(() => {
+    // TODO inserir rota para tela de tutoriais
+    // PictureInPicture.start();
+    navigation.navigate('Tutorials');
+  }, []);
 
   return (
     <Container>
@@ -34,11 +40,11 @@ const AppScreen: React.FC = () => {
         <Content>
           <Profile avatar={imgAvatar} profileSize="small" />
           <FlatList
-            keyExtractor={(item, index) => index.toString()}
-            numColumns={numColumns}
+            keyExtractor={(_, index) => index.toString()}
+            numColumns={2}
             data={app}
             renderItem={obj => {
-              return <ItemCard text={obj.item.name} image={obj.item.image} />;
+              return <ItemCard pipView={pipHandler} text={obj.item.name} image={obj.item.image} />;
             }}
           />
         </Content>

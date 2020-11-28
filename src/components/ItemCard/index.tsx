@@ -1,19 +1,20 @@
 import React from 'react';
 import { ImageSourcePropType } from 'react-native';
 
-import { Container, ItemText, TutorialImage } from './styles';
+import { ButtonContainer, ItemText, TutorialImage } from './styles';
 
 interface PropsItemCard {
   text: string;
   image: ImageSourcePropType;
+  pipView(): void;
 }
 
-const ItemCard: React.FC<PropsItemCard> = ({ image, text }) => {
+const ItemCard: React.FC<PropsItemCard> = ({ image, text, pipView }) => {
   return (
-    <Container>
+    <ButtonContainer onPress={pipView}>
       <TutorialImage source={image} />
       <ItemText>{text}</ItemText>
-    </Container>
+    </ButtonContainer>
   );
 };
 
