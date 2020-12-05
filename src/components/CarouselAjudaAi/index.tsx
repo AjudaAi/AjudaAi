@@ -1,32 +1,20 @@
-import React, { useCallback, useState } from 'react';
-import { Dimensions, ImageSourcePropType } from 'react-native';
+import React, { useCallback } from 'react';
+import { Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
+import { chooseTutorial } from '../../utils/ChooseTutorial';
 import { Container, ContainerCarousel, ImageSlide } from './styles';
-
-import wpp from '../../assets/images/tutorials/whatsapp.png';
-import gmail from '../../assets/images/tutorials/gmail.png';
-
-interface PropsItems {
-  image: ImageSourcePropType;
+interface DataCarousel {
+  tutorial: 'whatsapp' | 'olx'| 'gmail' | 'telegram' | 'nubank' | 'drive';
+  modulo: Number;
 }
 
-const CarouselAjudaAi: React.FC = () => {
+const CarouselAjudaAi: React.FC<DataCarousel> = (tutorial: DataCarousel) => {
   const { width: viewportWidth } = Dimensions.get('window');
-
-  const values: PropsItems[] = [
-    {
-      image: wpp,
-    },
-    {
-      image: gmail,
-    },
-  ]
-
-  const [data, setData ] = useState(values);  
+  
+  const data = chooseTutorial(tutorial);
   
   const handleRenderItem = useCallback(({ item, _ }: any) => {
-
     return (
       <ContainerCarousel>
         <ImageSlide source={item.image} />

@@ -1,16 +1,17 @@
 import React, { useRef, useCallback } from 'react';
-import { View, ImageSourcePropType } from 'react-native';
+import { View } from 'react-native';
 import { Modalize } from 'react-native-modalize';
 
 import Profile from '../../components/Profile';
 import CardTutorial from '../../components/CardTutorial';
 import theme from '../../styles/theme';
 
+// TODO deixar dinamico a troca do icone whatsapp
 import imgAvatar from '../../assets/images/avatar/perguntando.png';
 import whatsapp from '../../assets/images/tutorials/whatsapp.png';
-import tutorialWhatsapp from '../../assets/tutorials/whatsapp/slide1.1.png';
 
-import tutorialsWhatsapp from './modules/whatsapp/content';
+import T1thumbanail from '../../assets/tutorials/whatsapp/tutorial1/slide1.1.png';
+import T2thumbanail from '../../assets/tutorials/whatsapp/tutorial2/slide2.1.png';
 
 import CarouselAjudaAi from '../../components/CarouselAjudaAi';
 
@@ -20,17 +21,10 @@ import { Container, LinearGradientStyled, Text, Section } from './styles';
 
 const Tutorials: React.FC = () => {
   const modalizeRef = useRef<Modalize>(null);
+
   const onOpen = useCallback(() => {
     modalizeRef.current?.open();
   }, []);
-
-  const handleRenderItems = (item: any , index: Number) => {
-    return (
-      <View>
-        <Text>Test</Text>
-      </View>
-    );
-  }
 
   return (
     <Container>
@@ -40,12 +34,18 @@ const Tutorials: React.FC = () => {
           Toque e escute o que tutorial ensina!
         </TextCard>
 
+        <Text>Aulas disponíveis</Text>
+        {/* TODO Tornar dinamico listagem de tutorials */}
         <Section>
-          <Text>Aulas disponíveis</Text>
           <CardTutorial
-            title="Como mandar áudios e outras coisas!"
-            thumbnail={tutorialWhatsapp}
-            data={tutorialsWhatsapp}
+            title="Como mandar áudio"
+            thumbnail={T1thumbanail}
+            modal={onOpen}
+          />
+
+          <CardTutorial
+            title="Como fazer chamadas"
+            thumbnail={T2thumbanail}
             modal={onOpen}
           />
         </Section>
@@ -53,9 +53,12 @@ const Tutorials: React.FC = () => {
         <Modalize
           ref={modalizeRef}
           scrollViewProps={{ showsVerticalScrollIndicator: false }}
-          snapPoint={500}
+          snapPoint={900}
         >
-          <CarouselAjudaAi />
+
+          <CarouselAjudaAi tutorial="whatsapp" modulo={1} />
+          <CarouselAjudaAi tutorial="whatsapp" modulo={2} />
+        
         </Modalize>
       </LinearGradientStyled>
     </Container>
