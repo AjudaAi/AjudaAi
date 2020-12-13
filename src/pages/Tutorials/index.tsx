@@ -1,5 +1,4 @@
-import React, { useRef, useCallback } from 'react';
-import { View } from 'react-native';
+import React, { useRef, useCallback, useMemo } from 'react';
 import { Modalize } from 'react-native-modalize';
 
 import Profile from '../../components/Profile';
@@ -10,16 +9,20 @@ import theme from '../../styles/theme';
 import imgAvatar from '../../assets/images/avatar/perguntando.png';
 import whatsapp from '../../assets/images/tutorials/whatsapp.png';
 
-import T1thumbanail from '../../assets/tutorials/whatsapp/tutorial1/slide1.1.png';
-import T2thumbanail from '../../assets/tutorials/whatsapp/tutorial2/slide2.1.png';
-
 import CarouselAjudaAi from '../../components/CarouselAjudaAi';
 
 import TextCard from '../../components/TextCard';
 
-import { Container, LinearGradientStyled, Text, Section } from './styles';
+import CardTutorialDTO from '../../dtos/ICardTutorialDTO';
+import { thumbnailTutorials } from './modules/whatsapp/content';
+
+import { Container, CardTutorialList, LinearGradientStyled, Text, Section } from './styles';
 
 const Tutorials: React.FC = () => {
+  const cardTutorials = useMemo<CardTutorialDTO[]>(() => {
+    return thumbnailTutorials;
+  }, [thumbnailTutorials]);
+
   const modalizeRef = useRef<Modalize>(null);
 
   const onOpen = useCallback(() => {
@@ -36,19 +39,24 @@ const Tutorials: React.FC = () => {
 
         <Text>Aulas disponíveis</Text>
         {/* TODO Tornar dinamico listagem de tutorials */}
-        <Section>
-          <CardTutorial
-            title="Como mandar áudio"
-            thumbnail={T1thumbanail}
-            modal={onOpen}
-          />
-
-          <CardTutorial
-            title="Como fazer chamadas"
-            thumbnail={T2thumbanail}
-            modal={onOpen}
-          />
-        </Section>
+        <CardTutorialList
+            horizontal
+            showsHorizontalScrollIndicator
+            data={cardTutorials}
+            keyExtractor={(cardTutorial) => cardTutorial.modulo}
+            renderItem={({item}) => (
+              <CardTutorial
+                  title={item.title}
+                  thumbnail={item.thumbnail}
+                  modal={onOpen}
+                />
+              
+              // <Section>
+                
+              // </Section>
+            )}
+          >
+          </CardTutorialList> 
         
         <Modalize
           ref={modalizeRef}

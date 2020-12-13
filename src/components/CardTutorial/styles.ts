@@ -2,28 +2,27 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   position: relative;
-  width: 45%;
   padding: 5px 0;
   margin-right: 8px;
 `;
 
 export const Title = styled.Text`
   position: absolute;
+  top: 45%;
   color: #fff;
   font-family: 'RalewayRegular';
   font-size: 15px;
   text-align: center;
-  margin-bottom: 10px;
-  z-index: 1001;
+  z-index:1001;
+  padding: 0 20px;
 `;
 
 export const Block = styled.TouchableOpacity`
   position: relative;
-  display: flex;
   align-items:center;
   justify-content: center;
   height: 230px;
-  width: 100%;
+  width: 150px;
   border-radius: 15px;
   background: #00000029;
 `;

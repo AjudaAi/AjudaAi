@@ -1,5 +1,3 @@
-import { ImageSourcePropType } from 'react-native';
-
 // Tutorials
 import tutorial1Image1 from '../../../../assets/tutorials/whatsapp/tutorial1/slide1.1.png';
 import tutorial1Image2 from '../../../../assets/tutorials/whatsapp/tutorial1/slide1.2.png';
@@ -26,81 +24,146 @@ import tutorial4Image5 from '../../../../assets/tutorials/whatsapp/tutorial4/sli
 import tutorial4Image6 from '../../../../assets/tutorials/whatsapp/tutorial4/slide4.6.png';
 import tutorial4Image7 from '../../../../assets/tutorials/whatsapp/tutorial4/slide4.7.png';
 
-interface TutorialWPP {
-  image: ImageSourcePropType;
-}
+import CardTutorial from '../../../../dtos/ICardTutorialDTO';
+import Tutorials from '../../../../dtos/ITutorialsDTO';
 
-export const t1: TutorialWPP[] = [
+
+export const t1: Tutorials[] = [
   { 
+    id: 0,
+    modulo: 1,
     image: tutorial1Image1,
   },
   { 
+    id: 1,
+    modulo: 1,
     image: tutorial1Image2,
   },
   { 
+    id: 2,
+    modulo: 1,
     image: tutorial1Image3,
   },
   { 
+    id: 3,
+    modulo: 1,
     image: tutorial1Image4,
   },
   { 
+    id: 4,
+    modulo: 1,
     image: tutorial1Image5,
   },
 ];
 
-export const t2: TutorialWPP[] = [
+export const t2: Tutorials[] = [
   { 
+    id: 0,
+    modulo: 2,
     image: tutorial2Image1,
   },
   { 
+    id: 1,
+    modulo: 2,
     image: tutorial2Image2,
   },
   { 
+    id: 2,
+    modulo: 2,
     image: tutorial2Image3,
   },
 ];
 
-export const t3: TutorialWPP[] = [
+export const t3: Tutorials[] = [
   { 
+    id: 0,
+    modulo: 3,
     image: tutorial3Image1,
   },
   { 
+    id: 1,
+    modulo: 3,
     image: tutorial3Image2,
   },
   { 
+    id: 2,
+    modulo: 3,
     image: tutorial3Image3,
   },
   { 
+    id: 3,
+    modulo: 3,
     image: tutorial3Image4,
   },
   { 
+    id: 4,
+    modulo: 3,
     image: tutorial3Image5,
   },
   { 
+    id: 5,
+    modulo: 3,
     image: tutorial3Image6,
   },
 ];
 
-export const t4: TutorialWPP[] = [
+export const t4: Tutorials[] = [
   { 
+    id: 0,
+    modulo: 4,
     image: tutorial4Image1,
   },
   { 
+    id: 1,
+    modulo: 4,
     image: tutorial4Image2,
   },
   { 
+    id: 2,
+    modulo: 4,
     image: tutorial4Image3,
   },
   { 
+    id: 3,
+    modulo: 4,
     image: tutorial4Image4,
   },
   { 
+    id: 4,
+    modulo: 4,
     image: tutorial4Image5,
   },
   { 
+    id: 5,
+    modulo: 4,
     image: tutorial4Image6,
   },
   { 
+    id: 6,
+    modulo: 4,
     image: tutorial4Image7,
+  },
+];
+
+export const thumbnailTutorials: CardTutorial[] = [
+  {
+    thumbnail: tutorial1Image1,
+    title: 'Backups',
+    modulo: 1,
+  },
+  {
+    thumbnail: tutorial2Image1,
+    title: `Fixar conversas`,
+    modulo: 2,
+  },
+  {
+    thumbnail: tutorial3Image1,
+    title: 'Formatação de texto',
+    modulo: 3,
+  },
+  {
+    thumbnail: tutorial4Image1,
+    title: 'Verificação de 2 etapas',
+    modulo: 4,
   },
 ];

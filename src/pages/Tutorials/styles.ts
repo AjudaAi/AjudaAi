@@ -1,5 +1,8 @@
 import styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
+import { FlatList } from 'react-native';
+
+import CardTutorial from '../../dtos/ICardTutorialDTO';
 
 export const Container = styled.View`
   position: relative;
@@ -23,6 +26,10 @@ export const Text = styled.Text`
 
 export const Section = styled.View`
   position: relative;
-  flex-direction: row;
   width: 80%;
+`;
+
+export const CardTutorialList =  styled(FlatList as new () => FlatList<CardTutorial>)`
+  width: 80%;
+  height: 100%;
 `;
