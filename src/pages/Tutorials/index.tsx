@@ -33,30 +33,22 @@ const Tutorials: React.FC = () => {
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
         <Profile avatar={imgAvatar} iconImage={whatsapp} profileSize="small" />
-        <TextCard sizeTextCard="small">
-          Toque e escute o que tutorial ensina!
-        </TextCard>
-
+        <TextCard sizeTextCard="small">Toque e escute o que tutorial ensina!</TextCard>
         <Text>Aulas disponíveis</Text>
-        {/* TODO Tornar dinamico listagem de tutorials */}
+        
         <CardTutorialList
-            horizontal
-            showsHorizontalScrollIndicator
-            data={cardTutorials}
-            keyExtractor={(cardTutorial) => cardTutorial.modulo}
-            renderItem={({item}) => (
-              <CardTutorial
-                  title={item.title}
-                  thumbnail={item.thumbnail}
-                  modal={onOpen}
-                />
-              
-              // <Section>
-                
-              // </Section>
-            )}
-          >
-          </CardTutorialList> 
+          horizontal
+          showsHorizontalScrollIndicator
+          data={cardTutorials}
+          keyExtractor={(cardTutorial) => cardTutorial.modulo}
+          renderItem={({item}) => (
+            <CardTutorial
+                title={item.title}
+                thumbnail={item.thumbnail}
+                modal={onOpen}
+              />
+          )}
+        />
         
         <Modalize
           ref={modalizeRef}
