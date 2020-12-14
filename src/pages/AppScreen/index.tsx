@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 // import PictureInPicture from 'react-native-picture-in-picture';
 
-import { FlatList } from 'react-native';
+import { FlatList,Text, View } from 'react-native';
 
 import Profile from '../../components/Profile';
 import ItemCard from '../../components/ItemCard';
@@ -15,10 +15,10 @@ import imageTelegram from '../../assets/images/tutorials/telegram.png';
 import imageTiktok from '../../assets/images/tutorials/tiktok.png';
 import imageWhatsapp from '../../assets/images/tutorials/whatsapp.png';
 import imageGoogleDrive from '../../assets/images/tutorials/google-drive.png';
-
-import { Container, LinearGradientStyled, Content } from './styles';
+import { Container, LinearGradientStyled, Content,TitleText,TitleSub} from './styles';
 
 const AppScreen: React.FC = ({ navigation }) => {
+  
   const app = [
     { name: 'Whatsapp', image: imageWhatsapp },
     { name: 'Gmail', image: imageGmail },
@@ -38,6 +38,8 @@ const AppScreen: React.FC = ({ navigation }) => {
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
         <Content>
+        <TitleText>Escolha um aplicativo</TitleText> 
+         <TitleSub>Lista de aulas</TitleSub>
           <Profile avatar={imgAvatar} profileSize="small" />
           <FlatList
             keyExtractor={(_, index) => index.toString()}
@@ -54,3 +56,4 @@ const AppScreen: React.FC = ({ navigation }) => {
 };
 
 export default AppScreen;
+

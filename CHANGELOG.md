@@ -1,3 +1,8 @@
+## [v1.0.2] - 2020-12-14
+
+### Added
++ Added title text inserted in the tutorial screen.
+
 ## [v1.0.1] - 2020-10-31
 
 ### Added
@@ -7,3 +12,4 @@
 
 ### Added
 + First version of the Ajuda Aí app
+
