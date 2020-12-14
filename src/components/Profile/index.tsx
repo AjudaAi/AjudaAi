@@ -1,15 +1,17 @@
 import React from 'react';
+import { ImageSourcePropType } from 'react-native';
 
-import { BoxModelGradient, Container, Avatar, GlassModel } from './styles';
+import { BoxModelGradient, Container,Block, Avatar, GlassModel, IconApp } from './styles';
 
 import theme from '../../styles/theme';
 
 interface PropsProfile {
-  avatar: any;
+  avatar: ImageSourcePropType;
   profileSize: 'small' | 'default';
+  iconImage?: ImageSourcePropType;
 }
 
-const Profile: React.FC<PropsProfile> = ({ avatar, profileSize }) => {
+const Profile: React.FC<PropsProfile> = ({ avatar, profileSize, iconImage }) => {
   return (
     <Container>
       <BoxModelGradient
@@ -18,6 +20,9 @@ const Profile: React.FC<PropsProfile> = ({ avatar, profileSize }) => {
       >
         <GlassModel size={profileSize}>
           <Avatar source={avatar} size={profileSize} />
+          <Block>
+            <IconApp source={iconImage} />
+          </Block>
         </GlassModel>
       </BoxModelGradient>
     </Container>

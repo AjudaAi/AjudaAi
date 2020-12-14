@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import theme from '../../styles/theme';
 
-export const Container = styled.View`
+export const ButtonContainer = styled.TouchableOpacity`
   height: 80px;
   width: 80px;
   background: ${theme.colors.profile};
