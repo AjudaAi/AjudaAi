@@ -17,11 +17,6 @@ import imageWhatsapp from '../../assets/images/tutorials/whatsapp.png';
 import imageGoogleDrive from '../../assets/images/tutorials/google-drive.png';
 import { Container, LinearGradientStyled, Content,TitleText,TitleSub} from './styles';
 
-const title = {
-  first: 'Escolha um aplicativo',
-  second: 'Lista de aulas'
-}
-
 const AppScreen: React.FC = ({ navigation }) => {
   
   const app = [
@@ -43,8 +38,8 @@ const AppScreen: React.FC = ({ navigation }) => {
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
         <Content>
-        <TitleText>{title.first}</TitleText>
-        <TitleSub>{title.second}</TitleSub>
+        <TitleText>Escolha um aplicativo</TitleText> 
+         <TitleSub>Lista de aulas</TitleSub>
           <Profile avatar={imgAvatar} profileSize="small" />
           <FlatList
             keyExtractor={(_, index) => index.toString()}
