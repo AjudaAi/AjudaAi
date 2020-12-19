@@ -1,4 +1,4 @@
-import { t1, t2, t3, t4 } from '../pages/Tutorials/modules/whatsapp/content';
+import { t1, t2, t3, t4 } from '../shared/modules/whatsapp/content';
 
 interface Tutorial {
   tutorial: 'whatsapp' | 'olx'| 'gmail' | 'telegram' | 'nubank' | 'drive';
@@ -8,7 +8,7 @@ interface Tutorial {
 export function chooseTutorial({ tutorial, modulo }: Tutorial) {
   if(tutorial === 'whatsapp') {    
     
-    if(modulo === 1) {
+    if(modulo == 1) {
       return t1;
     }
     

@@ -9,12 +9,12 @@ import theme from '../../styles/theme';
 
 import imgAvatar from '../../assets/images/avatar/perguntando.png';
 
-import imageGmail from '../../assets/images/tutorials/gmail.png';
-import imageNubank from '../../assets/images/tutorials/nubank.png';
-import imageTelegram from '../../assets/images/tutorials/telegram.png';
-import imageTiktok from '../../assets/images/tutorials/tiktok.png';
-import imageWhatsapp from '../../assets/images/tutorials/whatsapp.png';
-import imageGoogleDrive from '../../assets/images/tutorials/google-drive.png';
+import imageGmail from '../../assets/images/logoTutorial/gmail.png';
+import imageNubank from '../../assets/images/logoTutorial/nubank.png';
+import imageTelegram from '../../assets/images/logoTutorial/telegram.png';
+// import imageOlx from '../../assets/images/logoTutorial/olx.png';
+import imageWhatsapp from '../../assets/images/logoTutorial/whatsapp.png';
+import imageGoogleDrive from '../../assets/images/logoTutorial/google-drive.png';
 
 import { Container, LinearGradientStyled, Content } from './styles';
 
@@ -23,7 +23,7 @@ const AppScreen: React.FC = ({ navigation }) => {
     { name: 'Whatsapp', image: imageWhatsapp },
     { name: 'Gmail', image: imageGmail },
     { name: 'Telegram', image: imageTelegram },
-    { name: 'Tiktok', image: imageTiktok },
+    // { name: 'Olx', image: imageOlx },
     { name: 'Nubank', image: imageNubank },
     { name: 'Drive', image: imageGoogleDrive },
   ];
