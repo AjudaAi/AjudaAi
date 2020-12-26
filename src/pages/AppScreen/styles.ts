@@ -24,15 +24,15 @@ export const Content = styled.View`
 `;
 
 export const TitleText = styled.Text`
- text-align: center;
- font-family: 'RalewayRegular';
- font-size: 26px;
- color: ${props => props.theme.colors.textPrimary};
+  text-align: center;
+  font-family: 'RalewayRegular';
+  font-size: 26px;
+  color: ${props => props.theme.colors.textPrimary};
 `;
 
 export const TitleSub = styled.Text`
   margin-bottom: 28px;
-  textAlign: center;
+  text-align: center;
   line-height: 22px;
   color: ${props => props.theme.colors.textSecondary};
   font-size: 18px;

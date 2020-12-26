@@ -49,7 +49,7 @@ export const GlassModel = styled.View<PropsAvatar>`
 `;
 
 export const Avatar = styled.Image<PropsAvatar>`
-  position: relative;  
+  position: relative;
   width: 200px;
   height: 200px;
   border-radius: 250px;
@@ -71,9 +71,9 @@ export const Block = styled.View`
 `;
 
 export const IconApp = styled.Image<PropsAvatar>`
-  position: absolute; 
+  position: absolute;
   right: -17px;
-  bottom: -15px; 
+  bottom: -15px;
   width: 50px;
   height: 50px;
   border-radius: 10px;
