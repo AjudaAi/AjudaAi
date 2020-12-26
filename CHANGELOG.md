@@ -1,3 +1,7 @@
+## [v1.1.0] - 2020-12-27
+
+### Added
++ Added tutorial in app.
 ## [v1.0.2] - 2020-12-14
 
 ### Added
