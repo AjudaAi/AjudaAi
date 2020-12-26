@@ -1,39 +1,37 @@
 import CardTutorial from '../../dtos/ICardTutorialDTO';
 
-/*** Whatsapp ***/
+/** * Whatsapp ** */
 import Wtutorial1Image1 from '../../assets/tutorials/whatsapp/tutorial1/slide1.1.png';
 import Wtutorial2Image1 from '../../assets/tutorials/whatsapp/tutorial2/slide2.1.png';
 import Wtutorial3Image1 from '../../assets/tutorials/whatsapp/tutorial3/slide3.1.png';
 import Wtutorial4Image1 from '../../assets/tutorials/whatsapp/tutorial4/slide4.1.png';
 
-/*** Gmail ***/
+/** * Gmail ** */
 import Gtutorial1Image1 from '../../assets/tutorials/gmail/tutorial1/slide1.1.png';
 import Gtutorial2Image1 from '../../assets/tutorials/gmail/tutorial2/slide2.1.png';
 import Gtutorial3Image1 from '../../assets/tutorials/gmail/tutorial3/slide3.1.png';
 
-/*** Telegram ***/
+/** * Telegram ** */
 import Ttutorial1Image1 from '../../assets/tutorials/telegram/tutorial1/slide1.1.png';
 import Ttutorial2Image1 from '../../assets/tutorials/telegram/tutorial2/slide2.1.png';
 import Ttutorial3Image1 from '../../assets/tutorials/telegram/tutorial3/slide3.1.png';
 
-/*** Google Drive ***/
+/** * Google Drive ** */
 import GDtutorial1Image1 from '../../assets/tutorials/googleDrive/tutorial1/slide1.1.png';
 import GDtutorial2Image1 from '../../assets/tutorials/googleDrive/tutorial2/slide2.1.png';
 import GDtutorial3Image1 from '../../assets/tutorials/googleDrive/tutorial3/slide3.1.png';
 
-/*** Nubank ***/
+/** * Nubank ** */
 import Ntutorial1Image1 from '../../assets/tutorials/nubank/tutorial1/slide1.1.png';
 import Ntutorial2Image1 from '../../assets/tutorials/nubank/tutorial2/slide2.1.png';
 import Ntutorial3Image1 from '../../assets/tutorials/nubank/tutorial3/slide3.1.png';
 
-
-/*** OLX ***/
+/** * OLX ** */
 import OLXtutorial1Image1 from '../../assets/tutorials/olx/tutorial1/slide1.1.png';
 import OLXtutorial2Image1 from '../../assets/tutorials/olx/tutorial2/slide2.1.png';
 
-
 const thumbnailTutorials: CardTutorial[] = [
-  /*** WHATSAPP ***/
+  /** * WHATSAPP ** */
   {
     thumbnail: Wtutorial1Image1,
     title: 'Proteger contra hacker de contas',
@@ -59,7 +57,7 @@ const thumbnailTutorials: CardTutorial[] = [
     modulo: 4,
   },
 
-  /*** Gmail ***/
+  /** * Gmail ** */
   {
     thumbnail: Gtutorial1Image1,
     title: 'Baixar uma fatura',
@@ -78,7 +76,7 @@ const thumbnailTutorials: CardTutorial[] = [
     tutorial: 'gmail',
     modulo: 3,
   },
-  /*** Telegram ***/
+  /** * Telegram ** */
   {
     thumbnail: Ttutorial1Image1,
     title: 'Criar sua conta',
@@ -97,7 +95,7 @@ const thumbnailTutorials: CardTutorial[] = [
     tutorial: 'telegram',
     modulo: 3,
   },
-  /*** Nubank ***/
+  /** * Nubank ** */
   {
     thumbnail: Ntutorial1Image1,
     title: 'Receber dinheiro',
@@ -116,7 +114,7 @@ const thumbnailTutorials: CardTutorial[] = [
     tutorial: 'nubank',
     modulo: 3,
   },
-  /*** OLX ***/
+  /** * OLX ** */
   {
     thumbnail: OLXtutorial1Image1,
     title: 'Como vender',
@@ -129,7 +127,7 @@ const thumbnailTutorials: CardTutorial[] = [
     tutorial: 'olx',
     modulo: 2,
   },
-  /*** Google Drive ***/
+  /** * Google Drive ** */
   {
     thumbnail: GDtutorial1Image1,
     title: 'Acessando e criando uma pasta na nuvem',

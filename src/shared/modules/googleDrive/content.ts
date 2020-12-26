@@ -17,20 +17,20 @@ import tutorial3Image5 from '../../../assets/tutorials/googleDrive/tutorial3/sli
 
 import Tutorials from '../../../dtos/ITutorialsDTO';
 
-export const t1: Tutorials[] = [
-  { 
+export const tgd1: Tutorials[] = [
+  {
     id: 0,
     tutorial: 'drive',
     modulo: 1,
     image: tutorial1Image1,
   },
-  { 
+  {
     id: 1,
     tutorial: 'drive',
     modulo: 1,
     image: tutorial1Image2,
   },
-  { 
+  {
     id: 2,
     tutorial: 'drive',
     modulo: 1,
@@ -38,32 +38,32 @@ export const t1: Tutorials[] = [
   },
 ];
 
-export const t2: Tutorials[] = [
-  { 
+export const tgd2: Tutorials[] = [
+  {
     id: 3,
     tutorial: 'drive',
     modulo: 2,
     image: tutorial2Image1,
   },
-  { 
+  {
     id: 4,
     tutorial: 'drive',
     modulo: 2,
     image: tutorial2Image2,
   },
-  { 
+  {
     id: 5,
     tutorial: 'drive',
     modulo: 2,
     image: tutorial2Image3,
   },
-  { 
+  {
     id: 6,
     tutorial: 'drive',
     modulo: 2,
     image: tutorial2Image4,
   },
-  { 
+  {
     id: 7,
     tutorial: 'drive',
     modulo: 2,
@@ -71,32 +71,32 @@ export const t2: Tutorials[] = [
   },
 ];
 
-export const t3: Tutorials[] = [
-  { 
+export const tgd3: Tutorials[] = [
+  {
     id: 8,
     tutorial: 'drive',
     modulo: 3,
     image: tutorial3Image1,
   },
-  { 
+  {
     id: 9,
     tutorial: 'drive',
     modulo: 3,
     image: tutorial3Image2,
   },
-  { 
+  {
     id: 10,
     tutorial: 'drive',
     modulo: 3,
     image: tutorial3Image3,
   },
-  { 
+  {
     id: 11,
     tutorial: 'drive',
     modulo: 3,
     image: tutorial3Image4,
   },
-  { 
+  {
     id: 12,
     tutorial: 'drive',
     modulo: 3,

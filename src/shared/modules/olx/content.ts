@@ -16,56 +16,56 @@ import tutorial2Image4 from '../../../assets/tutorials/olx/tutorial2/slide2.4.pn
 
 import Tutorials from '../../../dtos/ITutorialsDTO';
 
-export const t1: Tutorials[] = [
-  { 
+export const to1: Tutorials[] = [
+  {
     id: 0,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image1,
   },
-  { 
+  {
     id: 1,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image2,
   },
-  { 
+  {
     id: 2,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image3,
   },
-  { 
+  {
     id: 3,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image4,
   },
-  { 
+  {
     id: 4,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image5,
   },
-  { 
+  {
     id: 5,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image6,
   },
-  { 
+  {
     id: 6,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image7,
   },
-  { 
+  {
     id: 7,
     tutorial: 'olx',
     modulo: 1,
     image: tutorial1Image8,
   },
-  { 
+  {
     id: 8,
     tutorial: 'olx',
     modulo: 1,
@@ -73,26 +73,26 @@ export const t1: Tutorials[] = [
   },
 ];
 
-export const t2: Tutorials[] = [
-  { 
+export const to2: Tutorials[] = [
+  {
     id: 9,
     tutorial: 'olx',
     modulo: 2,
     image: tutorial2Image1,
   },
-  { 
+  {
     id: 10,
     tutorial: 'olx',
     modulo: 2,
     image: tutorial2Image2,
   },
-  { 
+  {
     id: 11,
     tutorial: 'olx',
     modulo: 2,
     image: tutorial2Image3,
   },
-  { 
+  {
     id: 12,
     tutorial: 'olx',
     modulo: 2,

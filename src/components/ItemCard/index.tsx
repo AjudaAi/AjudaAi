@@ -5,6 +5,7 @@ import { ButtonContainer, ItemText, TutorialImage } from './styles';
 
 interface PropsItemCard {
   text: string;
+  texto: string;
   image: ImageSourcePropType;
   pipView(): void;
 }

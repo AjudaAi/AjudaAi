@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useState } from 'react';
+import React, { useRef, useEffect, useCallback, useState } from 'react';
 import { Modalize } from 'react-native-modalize';
 
 import Profile from '../../components/Profile';
@@ -17,44 +17,63 @@ import TutorialsDTO from '../../dtos/ITutorialsDTO';
 import thumbnailTutorials from '../../shared/thumbnails';
 import { chooseTutorial } from '../../utils/ChooseTutorial';
 
-import { Container, CardTutorialList, LinearGradientStyled, Text, Section } from './styles';
+import {
+  Container,
+  CardTutorialList,
+  LinearGradientStyled,
+  Text,
+  Section,
+} from './styles';
 
-const Tutorials: React.FC = () => {
-  const [cardTutorials, setCardTutorials] = useState<CardTutorialDTO[]>(thumbnailTutorials);
+const Tutorials: React.FC = ({ route }) => {
+  const { tutorial } = route.params;
+  const [cardTutorials, setCardTutorials] = useState<CardTutorialDTO[]>();
 
   const [tutorialsAll, setTutorialsAll] = useState<TutorialsDTO[]>([]);
 
   const modalizeRef = useRef<Modalize>(null);
 
-  const onOpen = useCallback((modulo: Number, tutorial: any ) => {
-    const filteredTutorial = chooseTutorial({ tutorial, modulo });  
+  useEffect(() => {
+    const tutorials = thumbnailTutorials.filter(
+      thumbnail => thumbnail.tutorial === tutorial.toLowerCase(),
+    );
 
-    if(!filteredTutorial) {
-      throw new Error('Not found tutorial');
-    }
-    
-    setTutorialsAll(filteredTutorial);
+    setCardTutorials(tutorials);
+  }, []);
 
-    setTimeout(() => {
-      modalizeRef.current?.open(); 
-    }, 200);     
+  const onOpen = useCallback(
+    (modulo: number, tutorial: any) => {
+      const filteredTutorial = chooseTutorial({ tutorial, modulo });
 
-  }, [tutorialsAll]);
+      if (!filteredTutorial) {
+        throw new Error('Not found tutorial');
+      }
+
+      setTutorialsAll(filteredTutorial);
+
+      setTimeout(() => {
+        modalizeRef.current?.open();
+      }, 200);
+    },
+    [tutorialsAll],
+  );
 
   return (
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
         {/* TODO deixar dinamico a troca do icone whatsapp */}
         <Profile avatar={imgAvatar} iconImage={whatsapp} profileSize="small" />
-        <TextCard sizeTextCard="small">Toque e escute o que tutorial ensina!</TextCard>
+        <TextCard sizeTextCard="small">
+          Toque e escute o que tutorial ensina!
+        </TextCard>
         <Text>Aulas disponíveis</Text>
-        
+
         <CardTutorialList
           horizontal
           showsHorizontalScrollIndicator
           data={cardTutorials}
-          keyExtractor={(cardTutorial) => cardTutorial.modulo}
-          renderItem={({item}) => (
+          keyExtractor={cardTutorial => cardTutorial.modulo}
+          renderItem={({ item }) => (
             <CardTutorial
               modulo={item.modulo}
               title={item.title}
@@ -64,17 +83,17 @@ const Tutorials: React.FC = () => {
           )}
         />
 
-        {tutorialsAll && tutorialsAll.map(t => (
-          <Modalize
-            key={t.id}
-            ref={modalizeRef}
-            scrollViewProps={{ showsVerticalScrollIndicator: false }}
-            snapPoint={900}
-          >
-            <CarouselAjudaAi tutorial={t.tutorial} modulo={t.modulo} />
-          </Modalize>
-        ))}
-
+        {tutorialsAll &&
+          tutorialsAll.map(t => (
+            <Modalize
+              key={t.id}
+              ref={modalizeRef}
+              scrollViewProps={{ showsVerticalScrollIndicator: false }}
+              snapPoint={900}
+            >
+              <CarouselAjudaAi tutorial={t.tutorial} modulo={t.modulo} />
+            </Modalize>
+          ))}
       </LinearGradientStyled>
     </Container>
   );

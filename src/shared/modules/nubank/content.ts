@@ -18,26 +18,26 @@ import tutorial3Image5 from '../../../assets/tutorials/nubank/tutorial3/slide3.5
 
 import Tutorials from '../../../dtos/ITutorialsDTO';
 
-export const t1: Tutorials[] = [
-  { 
+export const tn1: Tutorials[] = [
+  {
     id: 0,
     tutorial: 'nubank',
     modulo: 1,
     image: tutorial1Image1,
   },
-  { 
+  {
     id: 1,
     tutorial: 'nubank',
     modulo: 1,
     image: tutorial1Image2,
   },
-  { 
+  {
     id: 2,
     tutorial: 'nubank',
     modulo: 1,
     image: tutorial1Image3,
   },
-  { 
+  {
     id: 3,
     tutorial: 'nubank',
     modulo: 1,
@@ -45,32 +45,32 @@ export const t1: Tutorials[] = [
   },
 ];
 
-export const t2: Tutorials[] = [
-  { 
+export const tn2: Tutorials[] = [
+  {
     id: 4,
     tutorial: 'nubank',
     modulo: 2,
     image: tutorial2Image1,
   },
-  { 
+  {
     id: 5,
     tutorial: 'nubank',
     modulo: 2,
     image: tutorial2Image2,
   },
-  { 
+  {
     id: 6,
     tutorial: 'nubank',
     modulo: 2,
     image: tutorial2Image3,
   },
-  { 
+  {
     id: 7,
     tutorial: 'nubank',
     modulo: 2,
     image: tutorial2Image4,
   },
-  { 
+  {
     id: 8,
     tutorial: 'nubank',
     modulo: 2,
@@ -78,32 +78,32 @@ export const t2: Tutorials[] = [
   },
 ];
 
-export const t3: Tutorials[] = [
-  { 
+export const tn3: Tutorials[] = [
+  {
     id: 9,
     tutorial: 'nubank',
     modulo: 3,
     image: tutorial3Image1,
   },
-  { 
+  {
     id: 10,
     tutorial: 'nubank',
     modulo: 3,
     image: tutorial3Image2,
   },
-  { 
+  {
     id: 11,
     tutorial: 'nubank',
     modulo: 3,
     image: tutorial3Image3,
   },
-  { 
+  {
     id: 12,
     tutorial: 'nubank',
     modulo: 3,
     image: tutorial3Image4,
   },
-  { 
+  {
     id: 13,
     tutorial: 'nubank',
     modulo: 3,
