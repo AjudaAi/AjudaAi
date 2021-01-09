@@ -2,11 +2,12 @@ import React, { useCallback } from 'react';
 import { Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
+import theme from '../../styles/theme';
 import { chooseTutorial } from '../../utils/ChooseTutorial';
-import { Container, ContainerCarousel, ImageSlide } from './styles';
+import { ContainerCarousel, ImageSlide, LinearGradientStyled } from './styles';
 interface DataCarousel {
   tutorial: 'whatsapp' | 'olx'| 'gmail' | 'telegram' | 'nubank' | 'drive';
-  modulo: Number;
+  modulo: number;
 }
 
 const CarouselAjudaAi: React.FC<DataCarousel> = (tutorial: DataCarousel) => {
@@ -23,7 +24,7 @@ const CarouselAjudaAi: React.FC<DataCarousel> = (tutorial: DataCarousel) => {
   }, []);
 
   return (
-    <Container>
+    <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
       <Carousel
         layout={'tinder'}
         layoutCardOffset={8} 
@@ -34,7 +35,7 @@ const CarouselAjudaAi: React.FC<DataCarousel> = (tutorial: DataCarousel) => {
         inactiveSlideOpacity={1}
         inactiveSlideScale={1}
       />
-    </Container>
+    </LinearGradientStyled>
   );
 }
 

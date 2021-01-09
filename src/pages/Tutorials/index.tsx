@@ -6,7 +6,6 @@ import CardTutorial from '../../components/CardTutorial';
 import theme from '../../styles/theme';
 
 import imgAvatar from '../../assets/images/avatar/perguntando.png';
-import whatsapp from '../../assets/images/logoTutorial/whatsapp.png';
 
 import CarouselAjudaAi from '../../components/CarouselAjudaAi';
 import TextCard from '../../components/TextCard';
@@ -16,19 +15,20 @@ import TutorialsDTO from '../../dtos/ITutorialsDTO';
 
 import thumbnailTutorials from '../../shared/thumbnails';
 import { chooseTutorial } from '../../utils/ChooseTutorial';
+import { IconIdentifierTutorial } from '../../utils/IconIdentifierTutorial';
 
 import {
   Container,
   CardTutorialList,
   LinearGradientStyled,
   Text,
-  Section,
 } from './styles';
 
 const Tutorials: React.FC = ({ route }) => {
   const { tutorial } = route.params;
   const [cardTutorials, setCardTutorials] = useState<CardTutorialDTO[]>();
-
+  const [icon, setIcon] = useState('');
+  
   const [tutorialsAll, setTutorialsAll] = useState<TutorialsDTO[]>([]);
 
   const modalizeRef = useRef<Modalize>(null);
@@ -37,9 +37,15 @@ const Tutorials: React.FC = ({ route }) => {
     const tutorials = thumbnailTutorials.filter(
       thumbnail => thumbnail.tutorial === tutorial.toLowerCase(),
     );
-
+    
     setCardTutorials(tutorials);
   }, []);
+
+  useEffect(() => {
+    const IconTemporary = IconIdentifierTutorial(tutorial);
+
+    setIcon(IconTemporary);
+  }, [icon]);
 
   const onOpen = useCallback(
     (modulo: number, tutorial: any) => {
@@ -48,7 +54,7 @@ const Tutorials: React.FC = ({ route }) => {
       if (!filteredTutorial) {
         throw new Error('Not found tutorial');
       }
-
+      
       setTutorialsAll(filteredTutorial);
 
       setTimeout(() => {
@@ -61,8 +67,7 @@ const Tutorials: React.FC = ({ route }) => {
   return (
     <Container>
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
-        {/* TODO deixar dinamico a troca do icone whatsapp */}
-        <Profile avatar={imgAvatar} iconImage={whatsapp} profileSize="small" />
+        <Profile avatar={imgAvatar} iconImage={icon} profileSize="small" />
         <TextCard sizeTextCard="small">
           Toque e escute o que tutorial ensina!
         </TextCard>
@@ -89,7 +94,7 @@ const Tutorials: React.FC = ({ route }) => {
               key={t.id}
               ref={modalizeRef}
               scrollViewProps={{ showsVerticalScrollIndicator: false }}
-              snapPoint={900}
+              snapPoint={1000}
             >
               <CarouselAjudaAi tutorial={t.tutorial} modulo={t.modulo} />
             </Modalize>
