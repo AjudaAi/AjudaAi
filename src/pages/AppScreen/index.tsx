@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import PictureInPicture from 'react-native-picture-in-picture';
 
-import { FlatList, Text, View } from 'react-native';
+import { FlatList } from 'react-native';
 
 import Profile from '../../components/Profile';
 import ItemCard from '../../components/ItemCard';

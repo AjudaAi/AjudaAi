@@ -1,24 +1,23 @@
 import styled from 'styled-components/native';
 import { Dimensions } from 'react-native';
-import theme from '../../styles/theme/index';
+import LinearGradient from 'react-native-linear-gradient';
 
-const { height: viewportHeight,  width: viewportWidth } = Dimensions.get('window');
+const { height: viewportHeight } = Dimensions.get('window');
 
-export const Container = styled.View`
+export const LinearGradientStyled = styled(LinearGradient)`
+  flex: 1;
   align-items: center;
-  background: ${theme.colors.primary};
   justify-content: center;
   height: 100%;
 `;
 
 export const ImageSlide = styled.Image`
-  width: ${viewportWidth};
+  width: 100%;
   height: 50%;
 `;
 export const ContainerCarousel = styled.View`
   align-items: center; 
   justify-content: center;
   height: ${viewportHeight};
-  width: ${viewportWidth};
-  /* padding: 0 2px; */
+  width: 100%;
 `;

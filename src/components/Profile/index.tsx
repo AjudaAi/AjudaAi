@@ -8,7 +8,7 @@ import theme from '../../styles/theme';
 interface PropsProfile {
   avatar: ImageSourcePropType;
   profileSize: 'small' | 'default';
-  iconImage?: ImageSourcePropType;
+  iconImage?: ImageSourcePropType | string;
 }
 
 const Profile: React.FC<PropsProfile> = ({ avatar, profileSize, iconImage }) => {
