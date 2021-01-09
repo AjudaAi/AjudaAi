@@ -1,3 +1,8 @@
+## [v1.2.0] - 2021-01-09
+
+### Added
++ Added profile dynamic in app.
+
 ## [v1.1.0] - 2020-12-27
 
 ### Added
