@@ -1,6 +1,10 @@
 import { ImageSourcePropType } from 'react-native';
 import styled, { css } from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 interface PropsAvatar {
   size?: 'small' | 'default';
@@ -11,13 +15,15 @@ export const Container = styled.View`
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin: 30px 0 40px 0;
 `;
 
 export const BoxModelGradient = styled(LinearGradient)<PropsAvatar>`
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
+  /* height: ${hp('39%')};
+  width: ${wp('63.7%')}; */
   justify-content: center;
   align-items: center;
   border-radius: 200px;
@@ -32,8 +38,10 @@ export const BoxModelGradient = styled(LinearGradient)<PropsAvatar>`
 
 export const GlassModel = styled.View<PropsAvatar>`
   position: relative;
-  width: 265px;
-  height: 265px;
+  width: 245px;
+  height: 245px;
+  /* height: ${hp('34%')};
+  width: ${wp('55%')}; */
   background: ${props => props.theme.colors.profile};
   border-radius: 200px;
   justify-content: center;
@@ -50,8 +58,10 @@ export const GlassModel = styled.View<PropsAvatar>`
 
 export const Avatar = styled.Image<PropsAvatar>`
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
+  /* height: ${hp('29%')};
+  width: ${wp('45%')}; */
   border-radius: 250px;
 
   ${props =>

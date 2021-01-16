@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, 0.2);
   justify-content: center;
   align-items: center;
 

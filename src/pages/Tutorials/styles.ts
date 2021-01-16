@@ -18,7 +18,7 @@ export const LinearGradientStyled = styled(LinearGradient)`
 export const Text = styled.Text`
   display: flex;
   width: 80%;
-  color: #9BFCFF;
+  color: #9bfcff;
   font-family: 'RalewayRegular';
   font-size: 18px;
   text-align: left;
@@ -29,7 +29,9 @@ export const Section = styled.View`
   width: 80%;
 `;
 
-export const CardTutorialList =  styled(FlatList as new () => FlatList<CardTutorial>)`
+export const CardTutorialList = styled(
+  FlatList as new () => FlatList<CardTutorial>,
+)`
   width: 80%;
   height: 100%;
 `;

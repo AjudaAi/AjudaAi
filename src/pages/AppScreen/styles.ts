@@ -31,7 +31,7 @@ export const TitleText = styled.Text`
 `;
 
 export const TitleSub = styled.Text`
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
   text-align: center;
   line-height: 22px;
   color: ${props => props.theme.colors.textSecondary};
