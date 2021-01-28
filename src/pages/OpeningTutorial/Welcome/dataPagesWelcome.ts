@@ -8,7 +8,6 @@ import profileSucesso from '../../../assets/images/avatar/cadastroFeitoComSucess
 interface WelcomeData {
   id: number;
   title: string;
-  subtitle: string;
   profile: '*.png';
   textCard: string | null;
   buttonText1: string | null;
@@ -21,7 +20,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 0,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileOla,
     textCard: null,
     buttonText1: 'Avançar',
@@ -32,7 +30,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 1,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileVamosComecar,
     textCard: 'Olá, tudo bem? Seja bem-vindo. Estou aqui para te ajudar!',
     buttonText1: 'Avançar',
@@ -43,7 +40,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 2,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileError,
     textCard: 'Para me responder, basta tocar nos botões brancos abaixo.',
     buttonText1: 'Avançar',
@@ -54,7 +50,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 3,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileOla,
     textCard: 'Vamos lá, experimente!',
     buttonText1: 'Clique Aqui',
@@ -65,7 +60,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 4,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profilePerguntando,
     textCard: 'Vamos lá, experimente!',
     buttonText1: '👍️',
@@ -76,7 +70,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 5,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileError,
     textCard:
       'Não, não é ai, tente tocar no botão branco, no meio da sombra, com aquele joinha no meio!',
@@ -88,7 +81,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 6,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileSucesso,
     textCard: 'Ótimo!',
     buttonText1: 'Avançar',
@@ -99,7 +91,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 7,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profilePerguntando,
     textCard: 'Certo, por onde começo?',
     buttonText1: 'Avançar',
@@ -110,7 +101,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 8,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileOla,
     textCard:
       'Ah! Não me apresentei. Oi! Sou um app que te ensina a mexer em outros aplicativos!',
@@ -122,7 +112,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 9,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileError,
     textCard: 'É, eu sei.... Meio irônico.',
     buttonText1: 'Avançar',
@@ -133,7 +122,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 10,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profileVamosComecar,
     textCard: 'Então sem enrolação!',
     buttonText1: 'Avançar',
@@ -144,7 +132,6 @@ const welcomeData: WelcomeData[] = [
   {
     id: 11,
     title: 'Assistente, Ajuda aí',
-    subtitle: 'Apoio por voz',
     profile: profilePerguntando,
     textCard: 'Qual app você quer aprender?',
     buttonText1: 'Avançar',

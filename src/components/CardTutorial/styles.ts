@@ -9,12 +9,12 @@ export const Container = styled.View`
 export const Title = styled.Text`
   position: absolute;
   top: 45%;
-  color: #fff;
+  color: #fefefe;
   font-family: 'RalewayRegular';
   font-size: 15px;
   text-align: center;
   z-index:1001;
-  padding: 0 20px;
+  fontWeight: bold;
 `;
 
 export const Block = styled.TouchableOpacity`
