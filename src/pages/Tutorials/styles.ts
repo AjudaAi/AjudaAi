@@ -22,6 +22,7 @@ export const Text = styled.Text`
   font-family: 'RalewayRegular';
   font-size: 18px;
   text-align: left;
+  padding-bottom: 10px;
 `;
 
 export const Section = styled.View`

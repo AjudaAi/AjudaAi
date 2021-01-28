@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageSourcePropType } from 'react-native';
+import { ImageSourcePropType, View } from 'react-native';
 
 import { Container, ImageTutorial, Block, Title } from './styles';
 
@@ -19,8 +19,10 @@ const CardTutorial: React.FC<ICardTutorial> = ({
   return (
     <>
       <Container>
-        <Block onPress={() => modal(modulo, title)}>
+        <View style={{ alignItems: 'center', paddingBottom:50}}>
           <Title>{title}</Title>
+        </View>
+        <Block onPress={() => modal(modulo, title)}>
           <ImageTutorial source={thumbnail} />
         </Block>
       </Container>

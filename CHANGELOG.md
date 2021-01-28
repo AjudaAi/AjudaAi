@@ -1,3 +1,8 @@
+## [v1.3.0] - 2021-01-27
+
+### Added
++ Added paging in the carousel of the tutorial.
+
 ## [v1.2.0] - 2021-01-09
 
 ### Added
