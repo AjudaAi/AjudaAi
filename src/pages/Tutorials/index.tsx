@@ -69,9 +69,9 @@ const Tutorials: React.FC = ({ route }) => {
       <LinearGradientStyled colors={theme.colors.gradientBackgroundColor}>
         <Profile avatar={imgAvatar} iconImage={icon} profileSize="small" />
         <TextCard sizeTextCard="small">
-          Toque e escute o que tutorial ensina!
+          Escolha o tutorial e siga os passos!
         </TextCard>
-        <Text>Aulas disponíveis</Text>
+        <Text >Aulas disponíveis</Text>
 
         <CardTutorialList
           horizontal

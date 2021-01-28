@@ -34,25 +34,25 @@ const thumbnailTutorials: CardTutorial[] = [
   /** * WHATSAPP ** */
   {
     thumbnail: Wtutorial1Image1,
-    title: 'Proteger contra hacker de contas',
+    title: 'Backup WhatsApp',
     tutorial: 'whatsapp',
     modulo: 1,
   },
   {
     thumbnail: Wtutorial2Image1,
-    title: 'Usar negrito, itálico e sublinhado',
+    title: 'Fixar suas conversas',
     tutorial: 'whatsapp',
     modulo: 2,
   },
   {
     thumbnail: Wtutorial3Image1,
-    title: 'Recuperar suas mensagens',
+    title: 'Usar negrito, itálico e sublinhado',
     tutorial: 'whatsapp',
     modulo: 3,
   },
   {
     thumbnail: Wtutorial4Image1,
-    title: 'Fixar suas conversas',
+    title: 'Verificação em 2 etapas',
     tutorial: 'whatsapp',
     modulo: 4,
   },
@@ -66,20 +66,20 @@ const thumbnailTutorials: CardTutorial[] = [
   },
   {
     thumbnail: Gtutorial2Image1,
-    title: 'Enviar um currículo',
+    title: 'Encaminhar e-mail',
     tutorial: 'gmail',
     modulo: 2,
   },
   {
     thumbnail: Gtutorial3Image1,
-    title: 'Encaminhar e-mail',
+    title: 'Enviar um currículo ',
     tutorial: 'gmail',
     modulo: 3,
   },
   /** * Telegram ** */
   {
     thumbnail: Ttutorial1Image1,
-    title: 'Criar sua conta',
+    title: 'Chat Secreto',
     tutorial: 'telegram',
     modulo: 1,
   },
@@ -91,20 +91,20 @@ const thumbnailTutorials: CardTutorial[] = [
   },
   {
     thumbnail: Ttutorial3Image1,
-    title: 'Chat Secreto',
+    title: 'Criar sua conta',
     tutorial: 'telegram',
     modulo: 3,
   },
   /** * Nubank ** */
   {
     thumbnail: Ntutorial1Image1,
-    title: 'Receber dinheiro',
+    title: 'Pagar uma conta',
     tutorial: 'nubank',
     modulo: 1,
   },
   {
     thumbnail: Ntutorial2Image1,
-    title: 'Pagar uma conta',
+    title: 'Receber dinheiro',
     tutorial: 'nubank',
     modulo: 2,
   },
@@ -142,7 +142,7 @@ const thumbnailTutorials: CardTutorial[] = [
   },
   {
     thumbnail: GDtutorial3Image1,
-    title: 'subindo uma foto da nuvem',
+    title: 'subindo uma foto para nuvem',
     tutorial: 'drive',
     modulo: 3,
   },

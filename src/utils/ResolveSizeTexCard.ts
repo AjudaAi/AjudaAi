@@ -1,6 +1,6 @@
 import {
-  widthPercentageToDP as wp, 
-  heightPercentageToDP as hp
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
 interface PropsSizeTextCard {
@@ -8,20 +8,20 @@ interface PropsSizeTextCard {
 }
 
 export function resolveSizeTexCard({ size }: PropsSizeTextCard) {
-  if(size === 'small') {
+  if (size === 'small') {
     return {
       height: hp('12%'),
-      width: wp('80%')
-    } 
-  } else if(size === 'large') {
+      width: wp('80%'),
+    };
+  }
+  if (size === 'large') {
     return {
       height: hp('28%'),
-      width: wp('80%')
-    }
-  } else {
-    return {
-      height: hp('18%'),
-      width: wp('80%')
-    }
+      width: wp('80%'),
+    };
   }
+  return {
+    height: hp('14%'),
+    width: wp('80%'),
+  };
 }

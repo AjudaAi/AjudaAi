@@ -13,7 +13,7 @@ export const Title = styled.Text`
 `;
 
 export const SubTitle = styled.Text`
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
   line-height: 22px;
   color: ${props => props.theme.colors.textSecondary};
   font-size: 18px;
