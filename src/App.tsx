@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import { ThemeProvider } from 'styled-components';
 
+import SplashScreen from './pages/SplashScreen';
 import OpeningTutorial from './pages/OpeningTutorial';
 import AppScreen from './pages/AppScreen';
 import Tutorials from './pages/Tutorials';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
     <NavigationContainer>
       <ThemeProvider theme={theme}>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="SplashScreen" component={SplashScreen} />
           <Stack.Screen name="Home" component={OpeningTutorial} />
           <Stack.Screen name="Dashboard" component={AppScreen} />
           <Stack.Screen name="Tutorials" component={Tutorials} />

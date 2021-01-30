@@ -3,7 +3,7 @@ import { StatusBar } from 'react-native';
 
 import { ThemeProvider } from 'styled-components';
 
-import SplashScreen from './SplashScreen';
+// import SplashScreen from './SplashScreen';
 import Welcome from './Welcome';
 
 import theme from '../../styles/theme';
@@ -13,15 +13,15 @@ import { Container, LinearGradientStyled } from './styles';
 const OpeningTutorial: React.FC = ({ navigation }) => {
   const [currentStepPages, setCurrentStepPages] = useState(0);
   const [stepsComponents, setStepsComponents] = useState([
-    <SplashScreen />,
+    // <SplashScreen />,
     <Welcome navigation={navigation} />,
   ]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setCurrentStepPages(1);
-    }, 3000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setCurrentStepPages(1);
+  //   }, 3000);
+  // }, []);
 
   return (
     <ThemeProvider theme={theme}>
