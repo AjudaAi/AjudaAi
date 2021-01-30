@@ -1,3 +1,9 @@
+## [v1.4.0] - 2021-01-30
+
+### Added
++ Added configs the of assets in app.
++ Added logic in experience user.
+
 ## [v1.3.0] - 2021-01-27
 
 ### Added
