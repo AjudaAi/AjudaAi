@@ -10,6 +10,8 @@ target 'ajudaai' do
 
   # pod 'react-native-picture-in-picture', :path => '../node_modules/react-native-picture-in-picture'
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
+
   target 'ajudaaiTests' do
     inherit! :complete
     # Pods for testing
