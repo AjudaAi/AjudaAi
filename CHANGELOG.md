@@ -1,3 +1,7 @@
+## [v1.4.1] - 2021-02-06
+
+### Changed
++ Fixed issues in build app.
 ## [v1.4.0] - 2021-01-30
 
 ### Added

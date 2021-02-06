@@ -5,7 +5,7 @@ import Profile from '../../components/Profile';
 import CardTutorial from '../../components/CardTutorial';
 import theme from '../../styles/theme';
 
-import imgAvatar from '../../assets/images/avatar/perguntando.png';
+import imgAvatar from '../../assets/images/avatar/perguntando.jpg';
 
 import CarouselAjudaAi from '../../components/CarouselAjudaAi';
 import TextCard from '../../components/TextCard';
