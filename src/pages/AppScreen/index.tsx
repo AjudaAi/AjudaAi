@@ -7,7 +7,7 @@ import Profile from '../../components/Profile';
 import ItemCard from '../../components/ItemCard';
 import theme from '../../styles/theme';
 
-import imgAvatar from '../../assets/images/avatar/perguntando.png';
+import imgAvatar from '../../assets/images/avatar/perguntando.jpg';
 
 import imageGmail from '../../assets/images/logoTutorial/gmail.png';
 import imageNubank from '../../assets/images/logoTutorial/nubank.png';
